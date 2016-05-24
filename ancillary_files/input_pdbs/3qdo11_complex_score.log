@@ -1,0 +1,32 @@
+core.init: Rosetta version cfc466308d02bc2649ea5ad781d49ad9310a9725 2016-03-08 23:18:50 -0500 from git@github.com:RosettaCommons/main.git
+core.init: command: /home/arubenstein//Rosetta/main/source/bin//score_jd2.default.linuxgccrelease -database /home/arubenstein//Rosetta/main/database/ -renumber_pdb -ignore_unrecognized_res -s /home/arubenstein//CADRES/PDZ_ddG/ancillary_files//input_pdbs/3qdo11_complex.pdb -overwrite -out:pdb
+core.init: 'RNG device' seed mode, using '/dev/urandom', seed=476872893 seed_offset=0 real_seed=476872893
+core.init.random: RandomGenerator:init: Normal mode, seed=476872893 RG_type=mt19937
+core.scoring.ScoreFunctionFactory: SCOREFUNCTION: talaris2013
+core.scoring.etable: Starting energy table calculation
+core.scoring.etable: smooth_etable: changing atr/rep split to bottom of energy well
+core.scoring.etable: smooth_etable: spline smoothing lj etables (maxdis = 6)
+core.scoring.etable: smooth_etable: spline smoothing solvation etables (max_dis = 6)
+core.scoring.etable: Finished calculating energy tables.
+basic.io.database: Database file opened: scoring/score_functions/hbonds/sp2_elec_params/HBPoly1D.csv
+basic.io.database: Database file opened: scoring/score_functions/hbonds/sp2_elec_params/HBFadeIntervals.csv
+basic.io.database: Database file opened: scoring/score_functions/hbonds/sp2_elec_params/HBEval.csv
+basic.io.database: Database file opened: scoring/score_functions/rama/Rama_smooth_dyn.dat_ss_6.4
+basic.io.database: Database file opened: scoring/score_functions/P_AA_pp/P_AA
+basic.io.database: Database file opened: scoring/score_functions/P_AA_pp/P_AA_n
+basic.io.database: Database file opened: scoring/score_functions/P_AA_pp/P_AA_pp
+protocols.evaluation.ChiWellRmsdEvaluatorCreator: Evaluation Creator active ... 
+protocols.evaluation.ChiWellRmsdEvaluatorCreator: Evaluation Creator active ... 
+protocols.jd2.PDBJobInputter: Instantiate PDBJobInputter
+protocols.jd2.PDBJobInputter: PDBJobInputter::fill_jobs
+protocols.jd2.PDBJobInputter: pushed /home/arubenstein//CADRES/PDZ_ddG/ancillary_files//input_pdbs/3qdo11_complex.pdb nstruct index 1
+protocols.evaluation.ChiWellRmsdEvaluatorCreator: Evaluation Creator active ... 
+protocols.jd2.PDBJobInputter: PDBJobInputter::pose_from_job
+protocols.jd2.PDBJobInputter: filling pose from PDB /home/arubenstein//CADRES/PDZ_ddG/ancillary_files//input_pdbs/3qdo11_complex.pdb
+core.chemical.ResidueTypeSet: Finished initializing fa_standard residue type set.  Created 384 residue types
+core.chemical.ResidueTypeSet: Total time to initialize 0.783113 seconds.
+core.pack.dunbrack.RotamerLibrary: Using Dunbrack library binary file '/home/arubenstein//Rosetta/main/database/rotamer/ExtendedOpt1-5/Dunbrack10.lib.bin'.
+core.pack.dunbrack.RotamerLibrary: Dunbrack 2010 library took 0.342821 seconds to load from binary
+protocols.jd2.JobDistributor: 3qdo11_complex_0001 reported success in 2 seconds
+protocols.jd2.JobDistributor: no more batches to process... 
+protocols.jd2.JobDistributor: 1 jobs considered, 1 jobs attempted in 2 seconds

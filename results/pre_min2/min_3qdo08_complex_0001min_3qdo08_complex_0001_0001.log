@@ -1,0 +1,746 @@
+core.init: Rosetta version cfc466308d02bc2649ea5ad781d49ad9310a9725 2016-03-08 23:18:50 -0500 from git@github.com:RosettaCommons/main.git
+core.init: command: /home/arubenstein//Rosetta/main/source/bin//minimize_with_cst.linuxgccrelease -in:file:l min_3qdo08_complex_0001min_3qdo08_complex_0001_0001.list -in:file:fullatom -fa_max_dis 9.0 -database /home/arubenstein//Rosetta/main/database/ -ddg::harmonic_ca_tether 0.5 -cst_fa_file /home/arubenstein//CADRES/PDZ_ddG/ancillary_files//input_pdbs/3qdo.cst -score:weights talaris2014_cst -ddg::constraint_weight 1.0 -ddg::out_pdb_prefix min -ddg::sc_min_only false
+core.init: 'RNG device' seed mode, using '/dev/urandom', seed=-696640496 seed_offset=0 real_seed=-696640496
+core.init.random: RandomGenerator:init: Normal mode, seed=-696640496 RG_type=mt19937
+core.chemical.ResidueTypeSet: Finished initializing fa_standard residue type set.  Created 384 residue types
+core.chemical.ResidueTypeSet: Total time to initialize 0.770221 seconds.
+core.scoring.ScoreFunctionFactory: SCOREFUNCTION: talaris2014_cst
+core.scoring.etable: Starting energy table calculation
+core.scoring.etable: smooth_etable: changing atr/rep split to bottom of energy well
+core.scoring.etable: smooth_etable: spline smoothing lj etables (maxdis = 9)
+core.scoring.etable: smooth_etable: spline smoothing solvation etables (max_dis = 9)
+core.scoring.etable: Finished calculating energy tables.
+basic.io.database: Database file opened: scoring/score_functions/hbonds/sp2_elec_params/HBPoly1D.csv
+basic.io.database: Database file opened: scoring/score_functions/hbonds/sp2_elec_params/HBFadeIntervals.csv
+basic.io.database: Database file opened: scoring/score_functions/hbonds/sp2_elec_params/HBEval.csv
+basic.io.database: Database file opened: scoring/score_functions/rama/Rama_smooth_dyn.dat_ss_6.4
+basic.io.database: Database file opened: scoring/score_functions/P_AA_pp/P_AA
+basic.io.database: Database file opened: scoring/score_functions/P_AA_pp/P_AA_n
+basic.io.database: Database file opened: scoring/score_functions/P_AA_pp/P_AA_pp
+using -l option 
+examining file: /home/arubenstein//CADRES/PDZ_ddG/results//prepack/min_3qdo08_complex_0001min_3qdo08_complex_0001_0001.pdb
+c-alpha constraints added to residues 2 and 1 dist 3.8144 and tol 0.5
+c-alpha constraints added to residues 3 and 1 dist 5.70047 and tol 0.5
+c-alpha constraints added to residues 3 and 2 dist 3.85289 and tol 0.5
+c-alpha constraints added to residues 4 and 1 dist 8.20636 and tol 0.5
+c-alpha constraints added to residues 4 and 2 dist 6.91302 and tol 0.5
+c-alpha constraints added to residues 4 and 3 dist 3.89237 and tol 0.5
+c-alpha constraints added to residues 5 and 2 dist 8.85875 and tol 0.5
+c-alpha constraints added to residues 5 and 3 dist 6.89539 and tol 0.5
+c-alpha constraints added to residues 5 and 4 dist 3.83382 and tol 0.5
+c-alpha constraints added to residues 6 and 3 dist 8.69035 and tol 0.5
+c-alpha constraints added to residues 6 and 4 dist 5.5238 and tol 0.5
+c-alpha constraints added to residues 6 and 5 dist 3.77888 and tol 0.5
+c-alpha constraints added to residues 7 and 5 dist 6.60871 and tol 0.5
+c-alpha constraints added to residues 7 and 6 dist 3.87066 and tol 0.5
+c-alpha constraints added to residues 8 and 6 dist 6.67548 and tol 0.5
+c-alpha constraints added to residues 8 and 7 dist 3.7353 and tol 0.5
+c-alpha constraints added to residues 9 and 7 dist 6.96924 and tol 0.5
+c-alpha constraints added to residues 9 and 8 dist 3.78969 and tol 0.5
+c-alpha constraints added to residues 10 and 8 dist 6.59698 and tol 0.5
+c-alpha constraints added to residues 10 and 9 dist 3.8135 and tol 0.5
+c-alpha constraints added to residues 11 and 9 dist 6.68972 and tol 0.5
+c-alpha constraints added to residues 11 and 10 dist 3.80584 and tol 0.5
+c-alpha constraints added to residues 12 and 10 dist 6.51521 and tol 0.5
+c-alpha constraints added to residues 12 and 11 dist 3.83012 and tol 0.5
+c-alpha constraints added to residues 13 and 11 dist 6.80928 and tol 0.5
+c-alpha constraints added to residues 13 and 12 dist 3.80602 and tol 0.5
+c-alpha constraints added to residues 14 and 12 dist 6.30354 and tol 0.5
+c-alpha constraints added to residues 14 and 13 dist 3.80594 and tol 0.5
+c-alpha constraints added to residues 15 and 13 dist 6.65113 and tol 0.5
+c-alpha constraints added to residues 15 and 14 dist 3.72914 and tol 0.5
+c-alpha constraints added to residues 16 and 14 dist 6.8839 and tol 0.5
+c-alpha constraints added to residues 16 and 15 dist 3.84016 and tol 0.5
+c-alpha constraints added to residues 17 and 14 dist 7.30471 and tol 0.5
+c-alpha constraints added to residues 17 and 15 dist 5.09827 and tol 0.5
+c-alpha constraints added to residues 17 and 16 dist 3.85426 and tol 0.5
+c-alpha constraints added to residues 18 and 13 dist 8.48086 and tol 0.5
+c-alpha constraints added to residues 18 and 14 dist 4.89222 and tol 0.5
+c-alpha constraints added to residues 18 and 15 dist 5.04299 and tol 0.5
+c-alpha constraints added to residues 18 and 16 dist 5.75491 and tol 0.5
+c-alpha constraints added to residues 18 and 17 dist 3.88335 and tol 0.5
+c-alpha constraints added to residues 19 and 12 dist 6.56161 and tol 0.5
+c-alpha constraints added to residues 19 and 13 dist 6.71056 and tol 0.5
+c-alpha constraints added to residues 19 and 14 dist 4.56444 and tol 0.5
+c-alpha constraints added to residues 19 and 15 dist 6.43444 and tol 0.5
+c-alpha constraints added to residues 19 and 16 dist 8.81238 and tol 0.5
+c-alpha constraints added to residues 19 and 17 dist 6.96605 and tol 0.5
+c-alpha constraints added to residues 19 and 18 dist 3.85008 and tol 0.5
+c-alpha constraints added to residues 20 and 14 dist 7.89135 and tol 0.5
+c-alpha constraints added to residues 20 and 15 dist 8.35577 and tol 0.5
+c-alpha constraints added to residues 20 and 17 dist 7.01339 and tol 0.5
+c-alpha constraints added to residues 20 and 18 dist 5.58428 and tol 0.5
+c-alpha constraints added to residues 20 and 19 dist 3.85826 and tol 0.5
+c-alpha constraints added to residues 21 and 18 dist 8.22242 and tol 0.5
+c-alpha constraints added to residues 21 and 19 dist 6.01559 and tol 0.5
+c-alpha constraints added to residues 21 and 20 dist 3.82415 and tol 0.5
+c-alpha constraints added to residues 22 and 20 dist 7.28106 and tol 0.5
+c-alpha constraints added to residues 22 and 21 dist 3.85682 and tol 0.5
+c-alpha constraints added to residues 23 and 21 dist 6.73237 and tol 0.5
+c-alpha constraints added to residues 23 and 22 dist 3.7923 and tol 0.5
+c-alpha constraints added to residues 24 and 22 dist 6.56803 and tol 0.5
+c-alpha constraints added to residues 24 and 23 dist 3.8105 and tol 0.5
+c-alpha constraints added to residues 25 and 23 dist 6.91499 and tol 0.5
+c-alpha constraints added to residues 25 and 24 dist 3.82648 and tol 0.5
+c-alpha constraints added to residues 26 and 24 dist 7.36055 and tol 0.5
+c-alpha constraints added to residues 26 and 25 dist 3.7894 and tol 0.5
+c-alpha constraints added to residues 27 and 25 dist 6.54052 and tol 0.5
+c-alpha constraints added to residues 27 and 26 dist 3.76072 and tol 0.5
+c-alpha constraints added to residues 28 and 26 dist 5.62605 and tol 0.5
+c-alpha constraints added to residues 28 and 27 dist 3.78799 and tol 0.5
+c-alpha constraints added to residues 29 and 26 dist 7.37013 and tol 0.5
+c-alpha constraints added to residues 29 and 27 dist 6.84124 and tol 0.5
+c-alpha constraints added to residues 29 and 28 dist 3.85042 and tol 0.5
+c-alpha constraints added to residues 30 and 28 dist 7.00894 and tol 0.5
+c-alpha constraints added to residues 30 and 29 dist 3.76158 and tol 0.5
+c-alpha constraints added to residues 31 and 28 dist 8.75541 and tol 0.5
+c-alpha constraints added to residues 31 and 29 dist 6.7599 and tol 0.5
+c-alpha constraints added to residues 31 and 30 dist 3.82177 and tol 0.5
+c-alpha constraints added to residues 32 and 30 dist 7.11711 and tol 0.5
+c-alpha constraints added to residues 32 and 31 dist 3.8205 and tol 0.5
+c-alpha constraints added to residues 33 and 31 dist 6.8149 and tol 0.5
+c-alpha constraints added to residues 33 and 32 dist 3.76518 and tol 0.5
+c-alpha constraints added to residues 34 and 32 dist 6.12689 and tol 0.5
+c-alpha constraints added to residues 34 and 33 dist 3.80485 and tol 0.5
+c-alpha constraints added to residues 35 and 33 dist 6.937 and tol 0.5
+c-alpha constraints added to residues 35 and 34 dist 3.80703 and tol 0.5
+c-alpha constraints added to residues 36 and 2 dist 8.50712 and tol 0.5
+c-alpha constraints added to residues 36 and 3 dist 8.8473 and tol 0.5
+c-alpha constraints added to residues 36 and 4 dist 8.18677 and tol 0.5
+c-alpha constraints added to residues 36 and 5 dist 5.81964 and tol 0.5
+c-alpha constraints added to residues 36 and 6 dist 8.48566 and tol 0.5
+c-alpha constraints added to residues 36 and 34 dist 6.53177 and tol 0.5
+c-alpha constraints added to residues 36 and 35 dist 3.82384 and tol 0.5
+c-alpha constraints added to residues 37 and 2 dist 7.75538 and tol 0.5
+c-alpha constraints added to residues 37 and 3 dist 6.98513 and tol 0.5
+c-alpha constraints added to residues 37 and 4 dist 6.81164 and tol 0.5
+c-alpha constraints added to residues 37 and 5 dist 5.48432 and tol 0.5
+c-alpha constraints added to residues 37 and 6 dist 6.89681 and tol 0.5
+c-alpha constraints added to residues 37 and 35 dist 6.30074 and tol 0.5
+c-alpha constraints added to residues 37 and 36 dist 3.8301 and tol 0.5
+c-alpha constraints added to residues 38 and 35 dist 5.67515 and tol 0.5
+c-alpha constraints added to residues 38 and 36 dist 5.69753 and tol 0.5
+c-alpha constraints added to residues 38 and 37 dist 3.85677 and tol 0.5
+c-alpha constraints added to residues 39 and 33 dist 8.92683 and tol 0.5
+c-alpha constraints added to residues 39 and 34 dist 7.65826 and tol 0.5
+c-alpha constraints added to residues 39 and 35 dist 5.05476 and tol 0.5
+c-alpha constraints added to residues 39 and 36 dist 5.80287 and tol 0.5
+c-alpha constraints added to residues 39 and 37 dist 5.95159 and tol 0.5
+c-alpha constraints added to residues 39 and 38 dist 3.87953 and tol 0.5
+c-alpha constraints added to residues 40 and 32 dist 8.90847 and tol 0.5
+c-alpha constraints added to residues 40 and 33 dist 5.17801 and tol 0.5
+c-alpha constraints added to residues 40 and 34 dist 4.78036 and tol 0.5
+c-alpha constraints added to residues 40 and 35 dist 4.27351 and tol 0.5
+c-alpha constraints added to residues 40 and 36 dist 6.44609 and tol 0.5
+c-alpha constraints added to residues 40 and 37 dist 8.46649 and tol 0.5
+c-alpha constraints added to residues 40 and 38 dist 6.97838 and tol 0.5
+c-alpha constraints added to residues 40 and 39 dist 3.774 and tol 0.5
+c-alpha constraints added to residues 41 and 32 dist 7.86515 and tol 0.5
+c-alpha constraints added to residues 41 and 33 dist 4.80653 and tol 0.5
+c-alpha constraints added to residues 41 and 34 dist 5.44015 and tol 0.5
+c-alpha constraints added to residues 41 and 35 dist 6.40596 and tol 0.5
+c-alpha constraints added to residues 41 and 36 dist 7.11338 and tol 0.5
+c-alpha constraints added to residues 41 and 39 dist 6.5237 and tol 0.5
+c-alpha constraints added to residues 41 and 40 dist 3.85329 and tol 0.5
+c-alpha constraints added to residues 42 and 30 dist 7.01827 and tol 0.5
+c-alpha constraints added to residues 42 and 31 dist 5.96601 and tol 0.5
+c-alpha constraints added to residues 42 and 32 dist 5.4796 and tol 0.5
+c-alpha constraints added to residues 42 and 33 dist 4.28218 and tol 0.5
+c-alpha constraints added to residues 42 and 34 dist 6.38881 and tol 0.5
+c-alpha constraints added to residues 42 and 35 dist 8.97973 and tol 0.5
+c-alpha constraints added to residues 42 and 40 dist 6.94619 and tol 0.5
+c-alpha constraints added to residues 42 and 41 dist 3.79286 and tol 0.5
+c-alpha constraints added to residues 43 and 25 dist 8.50654 and tol 0.5
+c-alpha constraints added to residues 43 and 26 dist 7.8705 and tol 0.5
+c-alpha constraints added to residues 43 and 29 dist 8.64408 and tol 0.5
+c-alpha constraints added to residues 43 and 30 dist 7.19623 and tol 0.5
+c-alpha constraints added to residues 43 and 31 dist 6.02564 and tol 0.5
+c-alpha constraints added to residues 43 and 32 dist 6.89715 and tol 0.5
+c-alpha constraints added to residues 43 and 33 dist 7.11775 and tol 0.5
+c-alpha constraints added to residues 43 and 34 dist 7.85949 and tol 0.5
+c-alpha constraints added to residues 43 and 41 dist 6.4712 and tol 0.5
+c-alpha constraints added to residues 43 and 42 dist 3.85762 and tol 0.5
+c-alpha constraints added to residues 44 and 25 dist 7.0629 and tol 0.5
+c-alpha constraints added to residues 44 and 26 dist 8.02112 and tol 0.5
+c-alpha constraints added to residues 44 and 41 dist 7.81069 and tol 0.5
+c-alpha constraints added to residues 44 and 42 dist 6.4774 and tol 0.5
+c-alpha constraints added to residues 44 and 43 dist 3.81853 and tol 0.5
+c-alpha constraints added to residues 45 and 23 dist 6.55642 and tol 0.5
+c-alpha constraints added to residues 45 and 24 dist 5.75921 and tol 0.5
+c-alpha constraints added to residues 45 and 25 dist 4.44339 and tol 0.5
+c-alpha constraints added to residues 45 and 26 dist 6.87007 and tol 0.5
+c-alpha constraints added to residues 45 and 43 dist 6.96034 and tol 0.5
+c-alpha constraints added to residues 45 and 44 dist 3.79953 and tol 0.5
+c-alpha constraints added to residues 46 and 22 dist 8.3883 and tol 0.5
+c-alpha constraints added to residues 46 and 23 dist 5.52123 and tol 0.5
+c-alpha constraints added to residues 46 and 24 dist 5.50307 and tol 0.5
+c-alpha constraints added to residues 46 and 25 dist 6.27563 and tol 0.5
+c-alpha constraints added to residues 46 and 44 dist 6.41438 and tol 0.5
+c-alpha constraints added to residues 46 and 45 dist 3.83427 and tol 0.5
+c-alpha constraints added to residues 47 and 21 dist 6.89765 and tol 0.5
+c-alpha constraints added to residues 47 and 22 dist 5.7973 and tol 0.5
+c-alpha constraints added to residues 47 and 23 dist 4.65045 and tol 0.5
+c-alpha constraints added to residues 47 and 24 dist 6.28027 and tol 0.5
+c-alpha constraints added to residues 47 and 25 dist 8.78441 and tol 0.5
+c-alpha constraints added to residues 47 and 45 dist 7.15481 and tol 0.5
+c-alpha constraints added to residues 47 and 46 dist 3.74154 and tol 0.5
+c-alpha constraints added to residues 48 and 21 dist 7.64536 and tol 0.5
+c-alpha constraints added to residues 48 and 22 dist 5.53033 and tol 0.5
+c-alpha constraints added to residues 48 and 23 dist 5.57686 and tol 0.5
+c-alpha constraints added to residues 48 and 24 dist 5.68991 and tol 0.5
+c-alpha constraints added to residues 48 and 25 dist 8.81219 and tol 0.5
+c-alpha constraints added to residues 48 and 46 dist 6.0165 and tol 0.5
+c-alpha constraints added to residues 48 and 47 dist 3.82763 and tol 0.5
+c-alpha constraints added to residues 49 and 20 dist 8.73287 and tol 0.5
+c-alpha constraints added to residues 49 and 21 dist 5.71565 and tol 0.5
+c-alpha constraints added to residues 49 and 22 dist 5.27523 and tol 0.5
+c-alpha constraints added to residues 49 and 23 dist 7.48676 and tol 0.5
+c-alpha constraints added to residues 49 and 24 dist 8.86543 and tol 0.5
+c-alpha constraints added to residues 49 and 47 dist 5.77421 and tol 0.5
+c-alpha constraints added to residues 49 and 48 dist 3.84238 and tol 0.5
+c-alpha constraints added to residues 50 and 20 dist 6.05199 and tol 0.5
+c-alpha constraints added to residues 50 and 21 dist 4.32929 and tol 0.5
+c-alpha constraints added to residues 50 and 22 dist 6.51073 and tol 0.5
+c-alpha constraints added to residues 50 and 47 dist 7.35645 and tol 0.5
+c-alpha constraints added to residues 50 and 48 dist 7.1772 and tol 0.5
+c-alpha constraints added to residues 50 and 49 dist 3.81564 and tol 0.5
+c-alpha constraints added to residues 51 and 19 dist 8.71804 and tol 0.5
+c-alpha constraints added to residues 51 and 20 dist 4.93865 and tol 0.5
+c-alpha constraints added to residues 51 and 21 dist 5.62164 and tol 0.5
+c-alpha constraints added to residues 51 and 22 dist 8.28703 and tol 0.5
+c-alpha constraints added to residues 51 and 49 dist 6.66781 and tol 0.5
+c-alpha constraints added to residues 51 and 50 dist 3.78034 and tol 0.5
+c-alpha constraints added to residues 52 and 20 dist 7.97496 and tol 0.5
+c-alpha constraints added to residues 52 and 50 dist 6.08912 and tol 0.5
+c-alpha constraints added to residues 52 and 51 dist 3.85399 and tol 0.5
+c-alpha constraints added to residues 53 and 20 dist 8.32414 and tol 0.5
+c-alpha constraints added to residues 53 and 50 dist 8.66648 and tol 0.5
+c-alpha constraints added to residues 53 and 51 dist 6.19266 and tol 0.5
+c-alpha constraints added to residues 53 and 52 dist 3.75126 and tol 0.5
+c-alpha constraints added to residues 54 and 15 dist 8.37402 and tol 0.5
+c-alpha constraints added to residues 54 and 17 dist 8.26977 and tol 0.5
+c-alpha constraints added to residues 54 and 18 dist 8.49101 and tol 0.5
+c-alpha constraints added to residues 54 and 19 dist 7.03709 and tol 0.5
+c-alpha constraints added to residues 54 and 20 dist 4.92847 and tol 0.5
+c-alpha constraints added to residues 54 and 21 dist 7.97415 and tol 0.5
+c-alpha constraints added to residues 54 and 50 dist 7.58936 and tol 0.5
+c-alpha constraints added to residues 54 and 51 dist 5.20382 and tol 0.5
+c-alpha constraints added to residues 54 and 52 dist 5.48215 and tol 0.5
+c-alpha constraints added to residues 54 and 53 dist 3.84195 and tol 0.5
+c-alpha constraints added to residues 55 and 12 dist 6.28059 and tol 0.5
+c-alpha constraints added to residues 55 and 13 dist 6.76733 and tol 0.5
+c-alpha constraints added to residues 55 and 14 dist 6.57041 and tol 0.5
+c-alpha constraints added to residues 55 and 15 dist 7.01377 and tol 0.5
+c-alpha constraints added to residues 55 and 17 dist 8.95378 and tol 0.5
+c-alpha constraints added to residues 55 and 18 dist 7.90978 and tol 0.5
+c-alpha constraints added to residues 55 and 19 dist 5.49626 and tol 0.5
+c-alpha constraints added to residues 55 and 20 dist 5.6649 and tol 0.5
+c-alpha constraints added to residues 55 and 21 dist 8.50427 and tol 0.5
+c-alpha constraints added to residues 55 and 51 dist 8.07096 and tol 0.5
+c-alpha constraints added to residues 55 and 52 dist 8.71264 and tol 0.5
+c-alpha constraints added to residues 55 and 53 dist 6.79456 and tol 0.5
+c-alpha constraints added to residues 55 and 54 dist 3.80019 and tol 0.5
+c-alpha constraints added to residues 56 and 10 dist 8.45949 and tol 0.5
+c-alpha constraints added to residues 56 and 11 dist 8.29786 and tol 0.5
+c-alpha constraints added to residues 56 and 12 dist 5.81115 and tol 0.5
+c-alpha constraints added to residues 56 and 13 dist 8.17532 and tol 0.5
+c-alpha constraints added to residues 56 and 14 dist 8.44678 and tol 0.5
+c-alpha constraints added to residues 56 and 19 dist 5.68755 and tol 0.5
+c-alpha constraints added to residues 56 and 20 dist 5.44062 and tol 0.5
+c-alpha constraints added to residues 56 and 21 dist 6.40714 and tol 0.5
+c-alpha constraints added to residues 56 and 50 dist 6.83104 and tol 0.5
+c-alpha constraints added to residues 56 and 51 dist 7.45801 and tol 0.5
+c-alpha constraints added to residues 56 and 52 dist 8.63116 and tol 0.5
+c-alpha constraints added to residues 56 and 53 dist 8.16969 and tol 0.5
+c-alpha constraints added to residues 56 and 54 dist 5.68649 and tol 0.5
+c-alpha constraints added to residues 56 and 55 dist 3.85896 and tol 0.5
+c-alpha constraints added to residues 57 and 19 dist 8.9284 and tol 0.5
+c-alpha constraints added to residues 57 and 20 dist 7.22303 and tol 0.5
+c-alpha constraints added to residues 57 and 21 dist 8.03553 and tol 0.5
+c-alpha constraints added to residues 57 and 50 dist 6.14218 and tol 0.5
+c-alpha constraints added to residues 57 and 51 dist 6.51599 and tol 0.5
+c-alpha constraints added to residues 57 and 52 dist 6.00843 and tol 0.5
+c-alpha constraints added to residues 57 and 53 dist 5.80838 and tol 0.5
+c-alpha constraints added to residues 57 and 54 dist 5.33096 and tol 0.5
+c-alpha constraints added to residues 57 and 55 dist 5.47394 and tol 0.5
+c-alpha constraints added to residues 57 and 56 dist 3.82702 and tol 0.5
+c-alpha constraints added to residues 58 and 12 dist 8.5685 and tol 0.5
+c-alpha constraints added to residues 58 and 52 dist 8.39785 and tol 0.5
+c-alpha constraints added to residues 58 and 53 dist 6.39714 and tol 0.5
+c-alpha constraints added to residues 58 and 54 dist 6.35539 and tol 0.5
+c-alpha constraints added to residues 58 and 55 dist 5.20558 and tol 0.5
+c-alpha constraints added to residues 58 and 56 dist 5.44797 and tol 0.5
+c-alpha constraints added to residues 58 and 57 dist 3.80544 and tol 0.5
+c-alpha constraints added to residues 59 and 10 dist 6.65137 and tol 0.5
+c-alpha constraints added to residues 59 and 11 dist 6.69568 and tol 0.5
+c-alpha constraints added to residues 59 and 12 dist 5.92222 and tol 0.5
+c-alpha constraints added to residues 59 and 13 dist 8.5999 and tol 0.5
+c-alpha constraints added to residues 59 and 54 dist 8.67711 and tol 0.5
+c-alpha constraints added to residues 59 and 55 dist 6.04404 and tol 0.5
+c-alpha constraints added to residues 59 and 56 dist 4.92535 and tol 0.5
+c-alpha constraints added to residues 59 and 57 dist 5.50106 and tol 0.5
+c-alpha constraints added to residues 59 and 58 dist 3.82768 and tol 0.5
+c-alpha constraints added to residues 60 and 10 dist 6.58876 and tol 0.5
+c-alpha constraints added to residues 60 and 11 dist 8.54551 and tol 0.5
+c-alpha constraints added to residues 60 and 12 dist 8.66273 and tol 0.5
+c-alpha constraints added to residues 60 and 55 dist 8.73511 and tol 0.5
+c-alpha constraints added to residues 60 and 56 dist 6.15151 and tol 0.5
+c-alpha constraints added to residues 60 and 57 dist 5.46482 and tol 0.5
+c-alpha constraints added to residues 60 and 58 dist 5.60859 and tol 0.5
+c-alpha constraints added to residues 60 and 59 dist 3.84289 and tol 0.5
+c-alpha constraints added to residues 61 and 10 dist 6.71945 and tol 0.5
+c-alpha constraints added to residues 61 and 11 dist 8.9175 and tol 0.5
+c-alpha constraints added to residues 61 and 12 dist 8.63281 and tol 0.5
+c-alpha constraints added to residues 61 and 21 dist 8.29852 and tol 0.5
+c-alpha constraints added to residues 61 and 47 dist 8.0255 and tol 0.5
+c-alpha constraints added to residues 61 and 50 dist 7.39825 and tol 0.5
+c-alpha constraints added to residues 61 and 55 dist 8.95813 and tol 0.5
+c-alpha constraints added to residues 61 and 56 dist 5.26238 and tol 0.5
+c-alpha constraints added to residues 61 and 57 dist 5.66148 and tol 0.5
+c-alpha constraints added to residues 61 and 58 dist 7.77156 and tol 0.5
+c-alpha constraints added to residues 61 and 59 dist 6.16563 and tol 0.5
+c-alpha constraints added to residues 61 and 60 dist 3.85552 and tol 0.5
+c-alpha constraints added to residues 62 and 47 dist 7.21542 and tol 0.5
+c-alpha constraints added to residues 62 and 48 dist 8.93995 and tol 0.5
+c-alpha constraints added to residues 62 and 49 dist 8.07139 and tol 0.5
+c-alpha constraints added to residues 62 and 50 dist 6.99903 and tol 0.5
+c-alpha constraints added to residues 62 and 56 dist 8.2751 and tol 0.5
+c-alpha constraints added to residues 62 and 57 dist 7.24755 and tol 0.5
+c-alpha constraints added to residues 62 and 60 dist 6.27879 and tol 0.5
+c-alpha constraints added to residues 62 and 61 dist 3.88703 and tol 0.5
+c-alpha constraints added to residues 63 and 21 dist 8.99544 and tol 0.5
+c-alpha constraints added to residues 63 and 46 dist 8.10019 and tol 0.5
+c-alpha constraints added to residues 63 and 47 dist 5.49138 and tol 0.5
+c-alpha constraints added to residues 63 and 48 dist 5.81502 and tol 0.5
+c-alpha constraints added to residues 63 and 49 dist 5.59062 and tol 0.5
+c-alpha constraints added to residues 63 and 50 dist 6.42473 and tol 0.5
+c-alpha constraints added to residues 63 and 61 dist 7.04322 and tol 0.5
+c-alpha constraints added to residues 63 and 62 dist 3.81115 and tol 0.5
+c-alpha constraints added to residues 64 and 46 dist 5.74103 and tol 0.5
+c-alpha constraints added to residues 64 and 47 dist 5.0498 and tol 0.5
+c-alpha constraints added to residues 64 and 48 dist 5.86143 and tol 0.5
+c-alpha constraints added to residues 64 and 49 dist 7.78555 and tol 0.5
+c-alpha constraints added to residues 64 and 62 dist 6.24979 and tol 0.5
+c-alpha constraints added to residues 64 and 63 dist 3.76265 and tol 0.5
+c-alpha constraints added to residues 65 and 5 dist 8.4613 and tol 0.5
+c-alpha constraints added to residues 65 and 45 dist 8.6643 and tol 0.5
+c-alpha constraints added to residues 65 and 46 dist 5.4721 and tol 0.5
+c-alpha constraints added to residues 65 and 47 dist 5.34034 and tol 0.5
+c-alpha constraints added to residues 65 and 48 dist 8.16986 and tol 0.5
+c-alpha constraints added to residues 65 and 61 dist 7.15508 and tol 0.5
+c-alpha constraints added to residues 65 and 62 dist 5.76161 and tol 0.5
+c-alpha constraints added to residues 65 and 63 dist 5.71302 and tol 0.5
+c-alpha constraints added to residues 65 and 64 dist 3.88893 and tol 0.5
+c-alpha constraints added to residues 66 and 5 dist 8.21531 and tol 0.5
+c-alpha constraints added to residues 66 and 44 dist 5.90719 and tol 0.5
+c-alpha constraints added to residues 66 and 45 dist 5.84263 and tol 0.5
+c-alpha constraints added to residues 66 and 46 dist 4.19896 and tol 0.5
+c-alpha constraints added to residues 66 and 47 dist 6.47698 and tol 0.5
+c-alpha constraints added to residues 66 and 64 dist 6.25311 and tol 0.5
+c-alpha constraints added to residues 66 and 65 dist 3.82329 and tol 0.5
+c-alpha constraints added to residues 67 and 23 dist 8.71508 and tol 0.5
+c-alpha constraints added to residues 67 and 44 dist 5.9851 and tol 0.5
+c-alpha constraints added to residues 67 and 45 dist 5.64102 and tol 0.5
+c-alpha constraints added to residues 67 and 46 dist 5.5704 and tol 0.5
+c-alpha constraints added to residues 67 and 47 dist 7.42524 and tol 0.5
+c-alpha constraints added to residues 67 and 65 dist 6.34624 and tol 0.5
+c-alpha constraints added to residues 67 and 66 dist 3.84621 and tol 0.5
+c-alpha constraints added to residues 68 and 7 dist 8.41106 and tol 0.5
+c-alpha constraints added to residues 68 and 41 dist 8.69683 and tol 0.5
+c-alpha constraints added to residues 68 and 44 dist 6.47084 and tol 0.5
+c-alpha constraints added to residues 68 and 45 dist 8.01072 and tol 0.5
+c-alpha constraints added to residues 68 and 46 dist 8.99837 and tol 0.5
+c-alpha constraints added to residues 68 and 66 dist 6.30809 and tol 0.5
+c-alpha constraints added to residues 68 and 67 dist 3.86226 and tol 0.5
+c-alpha constraints added to residues 69 and 67 dist 6.10582 and tol 0.5
+c-alpha constraints added to residues 69 and 68 dist 3.83214 and tol 0.5
+c-alpha constraints added to residues 70 and 67 dist 7.30626 and tol 0.5
+c-alpha constraints added to residues 70 and 68 dist 6.86598 and tol 0.5
+c-alpha constraints added to residues 70 and 69 dist 3.79355 and tol 0.5
+c-alpha constraints added to residues 71 and 69 dist 6.53917 and tol 0.5
+c-alpha constraints added to residues 71 and 70 dist 3.85335 and tol 0.5
+c-alpha constraints added to residues 72 and 69 dist 5.9381 and tol 0.5
+c-alpha constraints added to residues 72 and 70 dist 5.4793 and tol 0.5
+c-alpha constraints added to residues 72 and 71 dist 3.81483 and tol 0.5
+c-alpha constraints added to residues 73 and 68 dist 8.44821 and tol 0.5
+c-alpha constraints added to residues 73 and 69 dist 5.23718 and tol 0.5
+c-alpha constraints added to residues 73 and 70 dist 5.16603 and tol 0.5
+c-alpha constraints added to residues 73 and 71 dist 5.67925 and tol 0.5
+c-alpha constraints added to residues 73 and 72 dist 3.81786 and tol 0.5
+c-alpha constraints added to residues 74 and 68 dist 6.05462 and tol 0.5
+c-alpha constraints added to residues 74 and 69 dist 4.43589 and tol 0.5
+c-alpha constraints added to residues 74 and 70 dist 6.5949 and tol 0.5
+c-alpha constraints added to residues 74 and 71 dist 8.61045 and tol 0.5
+c-alpha constraints added to residues 74 and 72 dist 6.61168 and tol 0.5
+c-alpha constraints added to residues 74 and 73 dist 3.79539 and tol 0.5
+c-alpha constraints added to residues 75 and 42 dist 8.62 and tol 0.5
+c-alpha constraints added to residues 75 and 43 dist 8.61579 and tol 0.5
+c-alpha constraints added to residues 75 and 44 dist 6.9002 and tol 0.5
+c-alpha constraints added to residues 75 and 45 dist 8.23487 and tol 0.5
+c-alpha constraints added to residues 75 and 67 dist 7.406 and tol 0.5
+c-alpha constraints added to residues 75 and 68 dist 5.66886 and tol 0.5
+c-alpha constraints added to residues 75 and 69 dist 5.65245 and tol 0.5
+c-alpha constraints added to residues 75 and 70 dist 6.95978 and tol 0.5
+c-alpha constraints added to residues 75 and 73 dist 6.16202 and tol 0.5
+c-alpha constraints added to residues 75 and 74 dist 3.87173 and tol 0.5
+c-alpha constraints added to residues 76 and 30 dist 7.8531 and tol 0.5
+c-alpha constraints added to residues 76 and 31 dist 8.94245 and tol 0.5
+c-alpha constraints added to residues 76 and 33 dist 8.88995 and tol 0.5
+c-alpha constraints added to residues 76 and 41 dist 6.35103 and tol 0.5
+c-alpha constraints added to residues 76 and 42 dist 4.79343 and tol 0.5
+c-alpha constraints added to residues 76 and 43 dist 5.6665 and tol 0.5
+c-alpha constraints added to residues 76 and 44 dist 5.47077 and tol 0.5
+c-alpha constraints added to residues 76 and 45 dist 8.3711 and tol 0.5
+c-alpha constraints added to residues 76 and 67 dist 8.46539 and tol 0.5
+c-alpha constraints added to residues 76 and 68 dist 6.31523 and tol 0.5
+c-alpha constraints added to residues 76 and 69 dist 8.02724 and tol 0.5
+c-alpha constraints added to residues 76 and 74 dist 5.9145 and tol 0.5
+c-alpha constraints added to residues 76 and 75 dist 3.85363 and tol 0.5
+c-alpha constraints added to residues 77 and 26 dist 8.63097 and tol 0.5
+c-alpha constraints added to residues 77 and 28 dist 8.52217 and tol 0.5
+c-alpha constraints added to residues 77 and 29 dist 5.45839 and tol 0.5
+c-alpha constraints added to residues 77 and 30 dist 4.27807 and tol 0.5
+c-alpha constraints added to residues 77 and 31 dist 6.05272 and tol 0.5
+c-alpha constraints added to residues 77 and 32 dist 8.29355 and tol 0.5
+c-alpha constraints added to residues 77 and 33 dist 8.8305 and tol 0.5
+c-alpha constraints added to residues 77 and 41 dist 8.30054 and tol 0.5
+c-alpha constraints added to residues 77 and 42 dist 5.01676 and tol 0.5
+c-alpha constraints added to residues 77 and 43 dist 4.89338 and tol 0.5
+c-alpha constraints added to residues 77 and 44 dist 6.23444 and tol 0.5
+c-alpha constraints added to residues 77 and 45 dist 8.56545 and tol 0.5
+c-alpha constraints added to residues 77 and 74 dist 8.99129 and tol 0.5
+c-alpha constraints added to residues 77 and 75 dist 6.08862 and tol 0.5
+c-alpha constraints added to residues 77 and 76 dist 3.82043 and tol 0.5
+c-alpha constraints added to residues 78 and 26 dist 8.17911 and tol 0.5
+c-alpha constraints added to residues 78 and 27 dist 8.56809 and tol 0.5
+c-alpha constraints added to residues 78 and 28 dist 7.68583 and tol 0.5
+c-alpha constraints added to residues 78 and 29 dist 5.19879 and tol 0.5
+c-alpha constraints added to residues 78 and 30 dist 6.47655 and tol 0.5
+c-alpha constraints added to residues 78 and 42 dist 8.62376 and tol 0.5
+c-alpha constraints added to residues 78 and 43 dist 7.62893 and tol 0.5
+c-alpha constraints added to residues 78 and 44 dist 7.30284 and tol 0.5
+c-alpha constraints added to residues 78 and 45 dist 8.00999 and tol 0.5
+c-alpha constraints added to residues 78 and 74 dist 8.64353 and tol 0.5
+c-alpha constraints added to residues 78 and 75 dist 5.14638 and tol 0.5
+c-alpha constraints added to residues 78 and 76 dist 5.61202 and tol 0.5
+c-alpha constraints added to residues 78 and 77 dist 3.80337 and tol 0.5
+c-alpha constraints added to residues 79 and 25 dist 7.74265 and tol 0.5
+c-alpha constraints added to residues 79 and 26 dist 6.04346 and tol 0.5
+c-alpha constraints added to residues 79 and 27 dist 5.1713 and tol 0.5
+c-alpha constraints added to residues 79 and 28 dist 5.22217 and tol 0.5
+c-alpha constraints added to residues 79 and 29 dist 4.85724 and tol 0.5
+c-alpha constraints added to residues 79 and 30 dist 7.86962 and tol 0.5
+c-alpha constraints added to residues 79 and 44 dist 8.8615 and tol 0.5
+c-alpha constraints added to residues 79 and 45 dist 8.12564 and tol 0.5
+c-alpha constraints added to residues 79 and 75 dist 8.40952 and tol 0.5
+c-alpha constraints added to residues 79 and 77 dist 6.66947 and tol 0.5
+c-alpha constraints added to residues 79 and 78 dist 3.81253 and tol 0.5
+c-alpha constraints added to residues 80 and 23 dist 8.02453 and tol 0.5
+c-alpha constraints added to residues 80 and 24 dist 7.08198 and tol 0.5
+c-alpha constraints added to residues 80 and 25 dist 5.75372 and tol 0.5
+c-alpha constraints added to residues 80 and 26 dist 5.71441 and tol 0.5
+c-alpha constraints added to residues 80 and 27 dist 5.09175 and tol 0.5
+c-alpha constraints added to residues 80 and 28 dist 7.40512 and tol 0.5
+c-alpha constraints added to residues 80 and 29 dist 8.32315 and tol 0.5
+c-alpha constraints added to residues 80 and 45 dist 6.78996 and tol 0.5
+c-alpha constraints added to residues 80 and 78 dist 6.6247 and tol 0.5
+c-alpha constraints added to residues 80 and 79 dist 3.74826 and tol 0.5
+c-alpha constraints added to residues 81 and 27 dist 7.18156 and tol 0.5
+c-alpha constraints added to residues 81 and 78 dist 8.2247 and tol 0.5
+c-alpha constraints added to residues 81 and 79 dist 5.37316 and tol 0.5
+c-alpha constraints added to residues 81 and 80 dist 3.79932 and tol 0.5
+c-alpha constraints added to residues 82 and 75 dist 8.35978 and tol 0.5
+c-alpha constraints added to residues 82 and 78 dist 6.19663 and tol 0.5
+c-alpha constraints added to residues 82 and 79 dist 5.18717 and tol 0.5
+c-alpha constraints added to residues 82 and 80 dist 5.50804 and tol 0.5
+c-alpha constraints added to residues 82 and 81 dist 3.83015 and tol 0.5
+c-alpha constraints added to residues 83 and 23 dist 8.5548 and tol 0.5
+c-alpha constraints added to residues 83 and 45 dist 7.65469 and tol 0.5
+c-alpha constraints added to residues 83 and 67 dist 8.75238 and tol 0.5
+c-alpha constraints added to residues 83 and 70 dist 7.64085 and tol 0.5
+c-alpha constraints added to residues 83 and 75 dist 6.83393 and tol 0.5
+c-alpha constraints added to residues 83 and 78 dist 6.61716 and tol 0.5
+c-alpha constraints added to residues 83 and 79 dist 6.48162 and tol 0.5
+c-alpha constraints added to residues 83 and 80 dist 5.45748 and tol 0.5
+c-alpha constraints added to residues 83 and 81 dist 5.56667 and tol 0.5
+c-alpha constraints added to residues 83 and 82 dist 3.76103 and tol 0.5
+c-alpha constraints added to residues 84 and 23 dist 7.43086 and tol 0.5
+c-alpha constraints added to residues 84 and 79 dist 8.73291 and tol 0.5
+c-alpha constraints added to residues 84 and 80 dist 6.2822 and tol 0.5
+c-alpha constraints added to residues 84 and 81 dist 5.19306 and tol 0.5
+c-alpha constraints added to residues 84 and 82 dist 5.53152 and tol 0.5
+c-alpha constraints added to residues 84 and 83 dist 3.83292 and tol 0.5
+c-alpha constraints added to residues 85 and 80 dist 8.57289 and tol 0.5
+c-alpha constraints added to residues 85 and 81 dist 5.95685 and tol 0.5
+c-alpha constraints added to residues 85 and 82 dist 5.04419 and tol 0.5
+c-alpha constraints added to residues 85 and 83 dist 5.3761 and tol 0.5
+c-alpha constraints added to residues 85 and 84 dist 3.85603 and tol 0.5
+c-alpha constraints added to residues 86 and 70 dist 6.86035 and tol 0.5
+c-alpha constraints added to residues 86 and 71 dist 7.69017 and tol 0.5
+c-alpha constraints added to residues 86 and 73 dist 8.54211 and tol 0.5
+c-alpha constraints added to residues 86 and 81 dist 8.69651 and tol 0.5
+c-alpha constraints added to residues 86 and 82 dist 6.31457 and tol 0.5
+c-alpha constraints added to residues 86 and 83 dist 5.20847 and tol 0.5
+c-alpha constraints added to residues 86 and 84 dist 5.52676 and tol 0.5
+c-alpha constraints added to residues 86 and 85 dist 3.86663 and tol 0.5
+c-alpha constraints added to residues 87 and 70 dist 7.04056 and tol 0.5
+c-alpha constraints added to residues 87 and 71 dist 8.01023 and tol 0.5
+c-alpha constraints added to residues 87 and 82 dist 8.77723 and tol 0.5
+c-alpha constraints added to residues 87 and 83 dist 6.41755 and tol 0.5
+c-alpha constraints added to residues 87 and 84 dist 5.13919 and tol 0.5
+c-alpha constraints added to residues 87 and 85 dist 5.45022 and tol 0.5
+c-alpha constraints added to residues 87 and 86 dist 3.81825 and tol 0.5
+c-alpha constraints added to residues 88 and 83 dist 8.67271 and tol 0.5
+c-alpha constraints added to residues 88 and 84 dist 6.10094 and tol 0.5
+c-alpha constraints added to residues 88 and 85 dist 4.97221 and tol 0.5
+c-alpha constraints added to residues 88 and 86 dist 5.459 and tol 0.5
+c-alpha constraints added to residues 88 and 87 dist 3.84258 and tol 0.5
+c-alpha constraints added to residues 89 and 84 dist 8.53187 and tol 0.5
+c-alpha constraints added to residues 89 and 85 dist 5.84476 and tol 0.5
+c-alpha constraints added to residues 89 and 86 dist 5.04762 and tol 0.5
+c-alpha constraints added to residues 89 and 87 dist 5.61916 and tol 0.5
+c-alpha constraints added to residues 89 and 88 dist 3.87805 and tol 0.5
+c-alpha constraints added to residues 90 and 86 dist 8.5735 and tol 0.5
+c-alpha constraints added to residues 90 and 87 dist 7.82727 and tol 0.5
+c-alpha constraints added to residues 90 and 88 dist 5.44786 and tol 0.5
+c-alpha constraints added to residues 90 and 89 dist 3.82198 and tol 0.5
+c-alpha constraints added to residues 91 and 14 dist 8.78836 and tol 0.5
+c-alpha constraints added to residues 91 and 87 dist 8.4221 and tol 0.5
+c-alpha constraints added to residues 91 and 88 dist 7.64547 and tol 0.5
+c-alpha constraints added to residues 91 and 89 dist 6.05323 and tol 0.5
+c-alpha constraints added to residues 91 and 90 dist 3.79608 and tol 0.5
+c-alpha constraints added to residues 92 and 12 dist 8.3422 and tol 0.5
+c-alpha constraints added to residues 92 and 13 dist 5.58903 and tol 0.5
+c-alpha constraints added to residues 92 and 14 dist 5.59139 and tol 0.5
+c-alpha constraints added to residues 92 and 15 dist 8.28554 and tol 0.5
+c-alpha constraints added to residues 92 and 90 dist 6.50606 and tol 0.5
+c-alpha constraints added to residues 92 and 91 dist 3.824 and tol 0.5
+c-alpha constraints added to residues 93 and 11 dist 6.73708 and tol 0.5
+c-alpha constraints added to residues 93 and 12 dist 5.6679 and tol 0.5
+c-alpha constraints added to residues 93 and 13 dist 4.35738 and tol 0.5
+c-alpha constraints added to residues 93 and 14 dist 6.45991 and tol 0.5
+c-alpha constraints added to residues 93 and 19 dist 8.97992 and tol 0.5
+c-alpha constraints added to residues 93 and 71 dist 8.7195 and tol 0.5
+c-alpha constraints added to residues 93 and 91 dist 5.84529 and tol 0.5
+c-alpha constraints added to residues 93 and 92 dist 3.829 and tol 0.5
+c-alpha constraints added to residues 94 and 10 dist 8.16526 and tol 0.5
+c-alpha constraints added to residues 94 and 11 dist 5.6251 and tol 0.5
+c-alpha constraints added to residues 94 and 12 dist 5.25313 and tol 0.5
+c-alpha constraints added to residues 94 and 13 dist 6.29818 and tol 0.5
+c-alpha constraints added to residues 94 and 14 dist 7.79659 and tol 0.5
+c-alpha constraints added to residues 94 and 19 dist 8.25283 and tol 0.5
+c-alpha constraints added to residues 94 and 70 dist 7.24273 and tol 0.5
+c-alpha constraints added to residues 94 and 71 dist 6.23261 and tol 0.5
+c-alpha constraints added to residues 94 and 87 dist 6.66321 and tol 0.5
+c-alpha constraints added to residues 94 and 91 dist 7.3896 and tol 0.5
+c-alpha constraints added to residues 94 and 92 dist 6.66628 and tol 0.5
+c-alpha constraints added to residues 94 and 93 dist 3.79578 and tol 0.5
+c-alpha constraints added to residues 95 and 9 dist 7.08404 and tol 0.5
+c-alpha constraints added to residues 95 and 10 dist 6.02168 and tol 0.5
+c-alpha constraints added to residues 95 and 11 dist 4.48638 and tol 0.5
+c-alpha constraints added to residues 95 and 12 dist 6.62301 and tol 0.5
+c-alpha constraints added to residues 95 and 13 dist 8.8147 and tol 0.5
+c-alpha constraints added to residues 95 and 69 dist 8.09444 and tol 0.5
+c-alpha constraints added to residues 95 and 70 dist 6.07537 and tol 0.5
+c-alpha constraints added to residues 95 and 71 dist 5.03997 and tol 0.5
+c-alpha constraints added to residues 95 and 72 dist 7.70313 and tol 0.5
+c-alpha constraints added to residues 95 and 93 dist 6.42728 and tol 0.5
+c-alpha constraints added to residues 95 and 94 dist 3.77783 and tol 0.5
+c-alpha constraints added to residues 96 and 8 dist 8.18338 and tol 0.5
+c-alpha constraints added to residues 96 and 9 dist 5.6478 and tol 0.5
+c-alpha constraints added to residues 96 and 10 dist 5.33347 and tol 0.5
+c-alpha constraints added to residues 96 and 11 dist 6.25796 and tol 0.5
+c-alpha constraints added to residues 96 and 12 dist 8.26347 and tol 0.5
+c-alpha constraints added to residues 96 and 67 dist 6.88852 and tol 0.5
+c-alpha constraints added to residues 96 and 68 dist 7.36117 and tol 0.5
+c-alpha constraints added to residues 96 and 69 dist 5.60236 and tol 0.5
+c-alpha constraints added to residues 96 and 70 dist 4.84577 and tol 0.5
+c-alpha constraints added to residues 96 and 71 dist 6.31438 and tol 0.5
+c-alpha constraints added to residues 96 and 72 dist 8.08924 and tol 0.5
+c-alpha constraints added to residues 96 and 94 dist 6.29383 and tol 0.5
+c-alpha constraints added to residues 96 and 95 dist 3.81843 and tol 0.5
+c-alpha constraints added to residues 97 and 7 dist 6.41384 and tol 0.5
+c-alpha constraints added to residues 97 and 8 dist 5.56808 and tol 0.5
+c-alpha constraints added to residues 97 and 9 dist 4.53655 and tol 0.5
+c-alpha constraints added to residues 97 and 10 dist 6.46361 and tol 0.5
+c-alpha constraints added to residues 97 and 11 dist 8.81351 and tol 0.5
+c-alpha constraints added to residues 97 and 66 dist 8.53996 and tol 0.5
+c-alpha constraints added to residues 97 and 67 dist 6.26024 and tol 0.5
+c-alpha constraints added to residues 97 and 68 dist 5.43406 and tol 0.5
+c-alpha constraints added to residues 97 and 69 dist 4.91488 and tol 0.5
+c-alpha constraints added to residues 97 and 70 dist 6.68707 and tol 0.5
+c-alpha constraints added to residues 97 and 71 dist 8.59278 and tol 0.5
+c-alpha constraints added to residues 97 and 72 dist 8.76986 and tol 0.5
+c-alpha constraints added to residues 97 and 95 dist 6.9722 and tol 0.5
+c-alpha constraints added to residues 97 and 96 dist 3.75373 and tol 0.5
+c-alpha constraints added to residues 98 and 5 dist 8.55322 and tol 0.5
+c-alpha constraints added to residues 98 and 6 dist 7.91646 and tol 0.5
+c-alpha constraints added to residues 98 and 7 dist 5.45556 and tol 0.5
+c-alpha constraints added to residues 98 and 8 dist 5.54769 and tol 0.5
+c-alpha constraints added to residues 98 and 9 dist 6.42924 and tol 0.5
+c-alpha constraints added to residues 98 and 10 dist 7.56641 and tol 0.5
+c-alpha constraints added to residues 98 and 46 dist 8.58982 and tol 0.5
+c-alpha constraints added to residues 98 and 61 dist 8.55302 and tol 0.5
+c-alpha constraints added to residues 98 and 65 dist 5.79035 and tol 0.5
+c-alpha constraints added to residues 98 and 66 dist 5.26321 and tol 0.5
+c-alpha constraints added to residues 98 and 67 dist 4.55003 and tol 0.5
+c-alpha constraints added to residues 98 and 68 dist 5.27678 and tol 0.5
+c-alpha constraints added to residues 98 and 69 dist 7.03834 and tol 0.5
+c-alpha constraints added to residues 98 and 70 dist 8.89749 and tol 0.5
+c-alpha constraints added to residues 98 and 96 dist 6.06438 and tol 0.5
+c-alpha constraints added to residues 98 and 97 dist 3.76634 and tol 0.5
+c-alpha constraints added to residues 99 and 4 dist 7.9595 and tol 0.5
+c-alpha constraints added to residues 99 and 5 dist 4.77471 and tol 0.5
+c-alpha constraints added to residues 99 and 6 dist 5.04215 and tol 0.5
+c-alpha constraints added to residues 99 and 7 dist 4.50864 and tol 0.5
+c-alpha constraints added to residues 99 and 8 dist 6.52999 and tol 0.5
+c-alpha constraints added to residues 99 and 36 dist 8.66618 and tol 0.5
+c-alpha constraints added to residues 99 and 64 dist 8.79479 and tol 0.5
+c-alpha constraints added to residues 99 and 65 dist 5.52914 and tol 0.5
+c-alpha constraints added to residues 99 and 66 dist 4.94061 and tol 0.5
+c-alpha constraints added to residues 99 and 67 dist 6.58655 and tol 0.5
+c-alpha constraints added to residues 99 and 68 dist 6.85887 and tol 0.5
+c-alpha constraints added to residues 99 and 97 dist 7.02427 and tol 0.5
+c-alpha constraints added to residues 99 and 98 dist 3.80144 and tol 0.5
+c-alpha constraints added to residues 100 and 4 dist 5.8788 and tol 0.5
+c-alpha constraints added to residues 100 and 5 dist 4.56878 and tol 0.5
+c-alpha constraints added to residues 100 and 6 dist 5.32855 and tol 0.5
+c-alpha constraints added to residues 100 and 7 dist 6.60373 and tol 0.5
+c-alpha constraints added to residues 100 and 8 dist 7.72323 and tol 0.5
+c-alpha constraints added to residues 100 and 62 dist 7.87141 and tol 0.5
+c-alpha constraints added to residues 100 and 63 dist 8.84944 and tol 0.5
+c-alpha constraints added to residues 100 and 64 dist 7.11282 and tol 0.5
+c-alpha constraints added to residues 100 and 65 dist 4.85505 and tol 0.5
+c-alpha constraints added to residues 100 and 66 dist 6.52137 and tol 0.5
+c-alpha constraints added to residues 100 and 98 dist 6.41975 and tol 0.5
+c-alpha constraints added to residues 100 and 99 dist 3.79622 and tol 0.5
+c-alpha constraints added to residues 101 and 3 dist 8.63264 and tol 0.5
+c-alpha constraints added to residues 101 and 4 dist 5.66042 and tol 0.5
+c-alpha constraints added to residues 101 and 5 dist 5.40451 and tol 0.5
+c-alpha constraints added to residues 101 and 6 dist 7.9968 and tol 0.5
+c-alpha constraints added to residues 101 and 62 dist 8.807 and tol 0.5
+c-alpha constraints added to residues 101 and 63 dist 8.19358 and tol 0.5
+c-alpha constraints added to residues 101 and 64 dist 5.6161 and tol 0.5
+c-alpha constraints added to residues 101 and 65 dist 5.64234 and tol 0.5
+c-alpha constraints added to residues 101 and 66 dist 7.09842 and tol 0.5
+c-alpha constraints added to residues 101 and 99 dist 6.48343 and tol 0.5
+c-alpha constraints added to residues 101 and 100 dist 3.80485 and tol 0.5
+c-alpha constraints added to residues 102 and 26 dist 8.12082 and tol 0.5
+c-alpha constraints added to residues 103 and 25 dist 8.23335 and tol 0.5
+c-alpha constraints added to residues 103 and 26 dist 6.13903 and tol 0.5
+c-alpha constraints added to residues 103 and 27 dist 6.33505 and tol 0.5
+c-alpha constraints added to residues 103 and 28 dist 8.11065 and tol 0.5
+c-alpha constraints added to residues 103 and 102 dist 3.78966 and tol 0.5
+c-alpha constraints added to residues 104 and 24 dist 6.89516 and tol 0.5
+c-alpha constraints added to residues 104 and 25 dist 5.09712 and tol 0.5
+c-alpha constraints added to residues 104 and 26 dist 4.37206 and tol 0.5
+c-alpha constraints added to residues 104 and 27 dist 5.01962 and tol 0.5
+c-alpha constraints added to residues 104 and 28 dist 8.16979 and tol 0.5
+c-alpha constraints added to residues 104 and 80 dist 7.63775 and tol 0.5
+c-alpha constraints added to residues 104 and 102 dist 7.16666 and tol 0.5
+c-alpha constraints added to residues 104 and 103 dist 3.80187 and tol 0.5
+c-alpha constraints added to residues 105 and 23 dist 8.32835 and tol 0.5
+c-alpha constraints added to residues 105 and 24 dist 5.62955 and tol 0.5
+c-alpha constraints added to residues 105 and 25 dist 5.84305 and tol 0.5
+c-alpha constraints added to residues 105 and 26 dist 6.58645 and tol 0.5
+c-alpha constraints added to residues 105 and 27 dist 6.12613 and tol 0.5
+c-alpha constraints added to residues 105 and 80 dist 6.63166 and tol 0.5
+c-alpha constraints added to residues 105 and 81 dist 8.54552 and tol 0.5
+c-alpha constraints added to residues 105 and 103 dist 7.20977 and tol 0.5
+c-alpha constraints added to residues 105 and 104 dist 3.79361 and tol 0.5
+c-alpha constraints added to residues 106 and 22 dist 6.58545 and tol 0.5
+c-alpha constraints added to residues 106 and 23 dist 5.54709 and tol 0.5
+c-alpha constraints added to residues 106 and 24 dist 4.1125 and tol 0.5
+c-alpha constraints added to residues 106 and 25 dist 6.69143 and tol 0.5
+c-alpha constraints added to residues 106 and 48 dist 7.85076 and tol 0.5
+c-alpha constraints added to residues 106 and 80 dist 7.66898 and tol 0.5
+c-alpha constraints added to residues 106 and 104 dist 6.99271 and tol 0.5
+c-alpha constraints added to residues 106 and 105 dist 3.77231 and tol 0.5
+c-alpha constraints added to residues 107 and 21 dist 8.61425 and tol 0.5
+c-alpha constraints added to residues 107 and 22 dist 5.39301 and tol 0.5
+c-alpha constraints added to residues 107 and 23 dist 5.54531 and tol 0.5
+c-alpha constraints added to residues 107 and 24 dist 6.58389 and tol 0.5
+c-alpha constraints added to residues 107 and 80 dist 8.47874 and tol 0.5
+c-alpha constraints added to residues 107 and 81 dist 8.75672 and tol 0.5
+c-alpha constraints added to residues 107 and 84 dist 7.27143 and tol 0.5
+c-alpha constraints added to residues 107 and 105 dist 6.85128 and tol 0.5
+c-alpha constraints added to residues 107 and 106 dist 3.80714 and tol 0.5
+c-alpha constraints added to residues 108 and 18 dist 8.44542 and tol 0.5
+c-alpha constraints added to residues 108 and 19 dist 8.64878 and tol 0.5
+c-alpha constraints added to residues 108 and 20 dist 7.5175 and tol 0.5
+c-alpha constraints added to residues 108 and 21 dist 5.95143 and tol 0.5
+c-alpha constraints added to residues 108 and 22 dist 4.25158 and tol 0.5
+c-alpha constraints added to residues 108 and 23 dist 6.56289 and tol 0.5
+c-alpha constraints added to residues 108 and 49 dist 8.90047 and tol 0.5
+c-alpha constraints added to residues 108 and 84 dist 8.58216 and tol 0.5
+c-alpha constraints added to residues 108 and 106 dist 7.07855 and tol 0.5
+c-alpha constraints added to residues 108 and 107 dist 3.83577 and tol 0.5
+c-alpha constraints added to residues 109 and 17 dist 8.75237 and tol 0.5
+c-alpha constraints added to residues 109 and 18 dist 5.79713 and tol 0.5
+c-alpha constraints added to residues 109 and 19 dist 5.70926 and tol 0.5
+c-alpha constraints added to residues 109 and 20 dist 6.30069 and tol 0.5
+c-alpha constraints added to residues 109 and 21 dist 5.70033 and tol 0.5
+c-alpha constraints added to residues 109 and 22 dist 5.86321 and tol 0.5
+c-alpha constraints added to residues 109 and 23 dist 7.40629 and tol 0.5
+c-alpha constraints added to residues 109 and 84 dist 7.28132 and tol 0.5
+c-alpha constraints added to residues 109 and 87 dist 7.30426 and tol 0.5
+c-alpha constraints added to residues 109 and 88 dist 7.12883 and tol 0.5
+c-alpha constraints added to residues 109 and 107 dist 6.42913 and tol 0.5
+c-alpha constraints added to residues 109 and 108 dist 3.79409 and tol 0.5
+core.pack.dunbrack.RotamerLibrary: Using Dunbrack library binary file '/home/arubenstein//Rosetta/main/database/rotamer/ExtendedOpt1-5/Dunbrack10.lib.bin'.
+core.pack.dunbrack.RotamerLibrary: Dunbrack 2010 library took 0.374442 seconds to load from binary
+------------------------------------------------------------
+ Scores                       Weight   Raw Score Wghtd.Score
+------------------------------------------------------------
+ fa_atr                       1.000    -607.894    -607.894
+ fa_rep                       0.550     308.674     169.771
+ fa_sol                       0.938     367.096     344.152
+ fa_intra_rep                 0.005     165.456       0.827
+ fa_elec                      0.875     -54.275     -47.491
+ pro_close                    1.250       0.615       0.769
+ hbond_sr_bb                  1.170     -12.611     -14.755
+ hbond_lr_bb                  1.170     -29.879     -34.958
+ hbond_bb_sc                  1.170      -7.165      -8.383
+ hbond_sc                     1.100      -5.774      -6.351
+ dslf_fa13                    1.250       0.000       0.000
+ atom_pair_constraint         1.000       0.000       0.000
+ coordinate_constraint        1.000       0.000       0.000
+ angle_constraint             1.000       0.000       0.000
+ dihedral_constraint          1.000       0.000       0.000
+ rama                         0.250     -58.756     -14.689
+ omega                        0.625      20.353      12.721
+ fa_dun                       0.700     149.022     104.315
+ p_aa_pp                      0.400     -69.740     -27.896
+ yhh_planarity                0.625       0.978       0.611
+ ref                          1.000       3.319       3.319
+ res_type_constraint          1.000       0.000       0.000
+---------------------------------------------------
+ Total weighted score:                     -125.930
+------------------------------------------------------------
+ Scores                       Weight   Raw Score Wghtd.Score
+------------------------------------------------------------
+ fa_atr                       1.000    -609.260    -609.260
+ fa_rep                       0.550      59.132      32.523
+ fa_sol                       0.938     365.061     342.244
+ fa_intra_rep                 0.005     165.955       0.830
+ fa_elec                      0.875     -55.453     -48.522
+ pro_close                    1.250       0.560       0.700
+ hbond_sr_bb                  1.170     -12.845     -15.028
+ hbond_lr_bb                  1.170     -30.419     -35.590
+ hbond_bb_sc                  1.170      -7.702      -9.012
+ hbond_sc                     1.100      -6.569      -7.225
+ dslf_fa13                    1.250       0.000       0.000
+ atom_pair_constraint         1.000       4.554       4.554
+ coordinate_constraint        1.000       0.000       0.000
+ angle_constraint             1.000       0.000       0.000
+ dihedral_constraint          1.000       0.000       0.000
+ rama                         0.250     -56.581     -14.145
+ omega                        0.625      17.642      11.026
+ fa_dun                       0.700     148.368     103.858
+ p_aa_pp                      0.400     -69.749     -27.900
+ yhh_planarity                0.625       0.983       0.614
+ ref                          1.000       3.319       3.319
+ res_type_constraint          1.000       0.000       0.000
+---------------------------------------------------
+ Total weighted score:                     -267.014
+running another iteration of minimization. difference is: -141.084

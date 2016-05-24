@@ -1,0 +1,75 @@
+core.init: Rosetta version cfc466308d02bc2649ea5ad781d49ad9310a9725 2016-03-08 23:18:50 -0500 from git@github.com:RosettaCommons/main.git
+core.init: command: /home/arubenstein//Rosetta/main/source/bin//FlexPepDocking.linuxgccrelease -database /home/arubenstein//Rosetta/main/database/ -s /home/arubenstein//CADRES/PDZ_ddG/results//pre_min1/min_1g9o08_complex_0001.pdb -score:weights talaris2014_cst -out:prefix min_1g9o08_complex_0001 -cst_fa_file /home/arubenstein//CADRES/PDZ_ddG/ancillary_files//input_pdbs/1g9o.cst -flexpep_prepack -ex1 -ex2 -use_input_sc
+core.init: 'RNG device' seed mode, using '/dev/urandom', seed=766642287 seed_offset=0 real_seed=766642287
+core.init.random: RandomGenerator:init: Normal mode, seed=766642287 RG_type=mt19937
+core.scoring.ScoreFunctionFactory: SCOREFUNCTION: talaris2014_cst
+core.scoring.etable: Starting energy table calculation
+core.scoring.etable: smooth_etable: changing atr/rep split to bottom of energy well
+core.scoring.etable: smooth_etable: spline smoothing lj etables (maxdis = 6)
+core.scoring.etable: smooth_etable: spline smoothing solvation etables (max_dis = 6)
+core.scoring.etable: Finished calculating energy tables.
+basic.io.database: Database file opened: scoring/score_functions/hbonds/sp2_elec_params/HBPoly1D.csv
+basic.io.database: Database file opened: scoring/score_functions/hbonds/sp2_elec_params/HBFadeIntervals.csv
+basic.io.database: Database file opened: scoring/score_functions/hbonds/sp2_elec_params/HBEval.csv
+basic.io.database: Database file opened: scoring/score_functions/rama/Rama_smooth_dyn.dat_ss_6.4
+basic.io.database: Database file opened: scoring/score_functions/P_AA_pp/P_AA
+basic.io.database: Database file opened: scoring/score_functions/P_AA_pp/P_AA_n
+basic.io.database: Database file opened: scoring/score_functions/P_AA_pp/P_AA_pp
+basic.io.database: Database file opened: scoring/score_functions/EnvPairPotential/env_log.txt
+basic.io.database: Database file opened: scoring/score_functions/EnvPairPotential/cbeta_den.txt
+basic.io.database: Database file opened: scoring/score_functions/EnvPairPotential/pair_log.txt
+basic.io.database: Database file opened: scoring/score_functions/EnvPairPotential/cenpack_log.txt
+core.scoring.ScoreFunctionFactory: SCOREFUNCTION: talaris2014_cst
+protocols.jd2.PDBJobInputter: Instantiate PDBJobInputter
+protocols.jd2.PDBJobInputter: PDBJobInputter::fill_jobs
+protocols.jd2.PDBJobInputter: pushed /home/arubenstein//CADRES/PDZ_ddG/results//pre_min1/min_1g9o08_complex_0001.pdb nstruct index 1
+protocols.evaluation.ChiWellRmsdEvaluatorCreator: Evaluation Creator active ... 
+protocols.jd2.PDBJobInputter: PDBJobInputter::pose_from_job
+protocols.jd2.PDBJobInputter: filling pose from PDB /home/arubenstein//CADRES/PDZ_ddG/results//pre_min1/min_1g9o08_complex_0001.pdb
+core.chemical.ResidueTypeSet: Finished initializing fa_standard residue type set.  Created 384 residue types
+core.chemical.ResidueTypeSet: Total time to initialize 0.733784 seconds.
+FlexPepDockingProtocol: apply
+FlexPepDockingProtocol: WARNING: No native supplied by used - using starting structure as reference for statistics
+protocols.flexPepDocking.FlexPepDockingFlags: Receptor chain: A
+protocols.flexPepDocking.FlexPepDockingFlags: Receptor first res: 1
+protocols.flexPepDocking.FlexPepDockingFlags: Receptor nres: 91
+protocols.flexPepDocking.FlexPepDockingFlags: Peptide chain: B
+protocols.flexPepDocking.FlexPepDockingFlags: Peptide first res: 92
+protocols.flexPepDocking.FlexPepDockingFlags: Peptide nres: 8
+protocols.flexPepDocking.FlexPepDockingFlags: Peptide anchor: 95
+protocols.flexPepDocking.FlexPepDockingFlags: # peptide anchors: 1
+protocols.flexPepDocking.FlexPepDockingFlags: # peptide cuts: 0
+protocols.flexPepDocking.FlexPepDockingFlags: Receptor anchor: 21
+FlexPepDockingProtocol: Old FoldTree : FOLD_TREE  EDGE 1 91 -1  EDGE 1 92 1  EDGE 92 99 -1 
+FlexPepDockingProtocol: New FoldTree : FOLD_TREE  EDGE 1 21 -1  EDGE 21 91 -1  EDGE 21 95 1  EDGE 95 92 -1  EDGE 95 99 -1 
+core.scoring.constraints.util: Constraint choice: /home/arubenstein//CADRES/PDZ_ddG/ancillary_files//input_pdbs/1g9o.cst
+core.scoring.constraints.ConstraintsIO: read constraints from /home/arubenstein//CADRES/PDZ_ddG/ancillary_files//input_pdbs/1g9o.cst
+core.scoring.constraints.ConstraintsIO: Read in 532 constraints
+core.pack.task: Packer task: initialize from command line() 
+core.pack.dunbrack.RotamerLibrary: Using Dunbrack library binary file '/home/arubenstein//Rosetta/main/database/rotamer/ExtendedOpt1-5/Dunbrack10.lib.bin'.
+core.pack.dunbrack.RotamerLibrary: Dunbrack 2010 library took 0.330684 seconds to load from binary
+protocols.moves.RigidBodyMover: Translate: Jump (before): RT -0.46217 0.840884 0.281626 0.877004 0.386355 0.285645 0.131387 0.379003 -0.916021 3.46699 4.08598 -1.37272  
+protocols.moves.RigidBodyMover: Translate: Jump (after):  RT -0.46217 0.840884 0.281626 0.877004 0.386355 0.285645 0.131387 0.379003 -0.916021 760.88 649.742 95.8591  
+core.pack.pack_rotamers: built 2398 rotamers at 99 positions.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+core.pack.interaction_graph.interaction_graph_factory: IG: 3642828 bytes
+protocols.moves.RigidBodyMover: Translate: Jump (before): RT -0.46217 0.840884 0.281626 0.877004 0.386355 0.285645 0.131387 0.379003 -0.916021 760.88 649.742 95.8591  
+protocols.moves.RigidBodyMover: Translate: Jump (after):  RT -0.46217 0.840884 0.281626 0.877004 0.386355 0.285645 0.131387 0.379003 -0.916021 3.46699 4.08598 -1.37272  
+protocols.moves.RigidBodyMover: Translate: Jump (before): RT -0.46217 0.840884 0.281626 0.877004 0.386355 0.285645 0.131387 0.379003 -0.916021 3.46699 4.08598 -1.37272  
+protocols.moves.RigidBodyMover: Translate: Jump (after):  RT -0.46217 0.840884 0.281626 0.877004 0.386355 0.285645 0.131387 0.379003 -0.916021 756.368 655.357 93.4287  
+FlexPepDockingPoseMetrics: Isc: 821.521
+FlexPepDockingPoseMetrics: Total BSA  is: 986.223
+FlexPepDockingPoseMetrics: Interface HB #: 6
+FlexPepDockingPoseMetrics: Total packstats: -0.0361468
+FlexPepDockingPoseMetrics: Interface Unsat polar groups: 4
+FlexPepDockingPoseMetrics: 92 bsa: 50.714 HB: 0 pack: 0.635384 unsat: 0
+FlexPepDockingPoseMetrics: 93 bsa: 0 HB: 0 pack: 0.572069 unsat: 0
+FlexPepDockingPoseMetrics: 94 bsa: 27.6783 HB: 0 pack: 0.640449 unsat: 0
+FlexPepDockingPoseMetrics: 95 bsa: 65.3876 HB: 0 pack: 0.621049 unsat: 0
+FlexPepDockingPoseMetrics: 96 bsa: 102.415 HB: 0 pack: 0.636417 unsat: 1
+FlexPepDockingPoseMetrics: 97 bsa: 70.1097 HB: 2 pack: 0.873467 unsat: 0
+FlexPepDockingPoseMetrics: 98 bsa: 102.535 HB: 0 pack: 0.482159 unsat: 0
+FlexPepDockingPoseMetrics: 99 bsa: 182.613 HB: 4 pack: 0.636866 unsat: 0
+protocols.jd2.JobDistributor: min_1g9o08_complex_0001min_1g9o08_complex_0001_0001 reported success in 8 seconds
+protocols.jd2.JobDistributor: no more batches to process... 
+protocols.jd2.JobDistributor: 1 jobs considered, 1 jobs attempted in 8 seconds
