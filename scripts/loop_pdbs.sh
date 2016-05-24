@@ -24,7 +24,7 @@ fi
 n_files=${#input_pdb[@]}
 
 n_files_in_group=$(( $n_files / $n_servers + 1 ))
-begin_index=$(( $n_files_in_group * ($this_server-1) ))
+begin_index=$(( $n_files_in_group * ($server-1) ))
 
 echo "Looping"
 echo "Filenames are ${input_pdb[@]:$begin_index:$n_files_in_group}"
@@ -35,7 +35,7 @@ counter=0
 n_cores=40
 
 #n_cores_per_script must be a factor of n_cores TODO: output warning if not
-if [ -z ${n_cores_per_script+x} ];
+if [ ! -z ${n_cores_per_script+x} ];
 then
         n_cores=$(( $n_cores / $n_cores_per_script ))
 fi

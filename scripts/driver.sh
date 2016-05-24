@@ -3,7 +3,7 @@
 #driver script for PDZ ddG program
 #first step is to preminimize sidechains and backbones of both complexes (primarily so that we can generate constraints files for xtal structures)
 
-server=$1
+server=$1 #if only running with one server, make the server number be 1
 prelim=$2
 
 export HOME=~/
@@ -40,6 +40,6 @@ else
 
 	#performing flexpepdock refine for 1g9o - only on server 
         #only one server because already partitioned the pdbs in the previous step
-	$SCRIPTS'/'loop_pdbs.sh $OUTPATH'/ddg/*/*.pdb' $OUTPATH'/refine/' "" 8 6 $SCRIPTS'/'fpd_refine.sh $server 1 8
+	$SCRIPTS'/'loop_pdbs.sh $OUTPATH'/ddg/*/*.pdb' $OUTPATH'/refine/' "" 8 6 $SCRIPTS'/'fpd_refine.sh 1 1 8
 fi
 
