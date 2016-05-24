@@ -39,6 +39,7 @@ else
 	$SCRIPTS'/'loop_pdbs.sh $OUTPATH'/pre_min2/*.pdb' $OUTPATH'/'ddg'/' "" 8 14 $SCRIPTS'/'ddg.sh $server 5 10
 
 	#performing flexpepdock refine for 1g9o - only on server 
-	$SCRIPTS'/'loop_pdbs.sh $OUTPATH'/ddg/*/*.pdb' $OUTPATH'/refine/' "" 8 6 $SCRIPTS'/'fpd_refine.sh $server 5 8
+        #only one server because already partitioned the pdbs in the previous step
+	$SCRIPTS'/'loop_pdbs.sh $OUTPATH'/ddg/*/*.pdb' $OUTPATH'/refine/' "" 8 6 $SCRIPTS'/'fpd_refine.sh $server 1 8
 fi
 
