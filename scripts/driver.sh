@@ -36,9 +36,9 @@ then
         $SCRIPTS'/'loop_pdbs.sh $OUTPATH'/prepack/*.pdb' $OUTPATH'/'pre_min2'/' "" 4 6 $SCRIPTS'/'pre_min.sh
 
 else
-	$SCRIPTS'/'loop_pdbs.sh $OUTPATH'/pre_min2/*.pdb' $OUTPATH'/'ddg'/' "" 8 14 $SCRIPTS'/'ddg.sh $server
+	$SCRIPTS'/'loop_pdbs.sh $OUTPATH'/pre_min2/*.pdb' $OUTPATH'/'ddg'/' "" 8 14 $SCRIPTS'/'ddg.sh $server 5 10
 
 	#performing flexpepdock refine for 1g9o - only on server 
-	$SCRIPTS'/'loop_pdbs.sh $OUTPATH'/ddg/*/*.pdb' $OUTPATH'/refine/' "" 8 6 $SCRIPTS'/'fpd_refine.sh $server 5 5
+	$SCRIPTS'/'loop_pdbs.sh $OUTPATH'/ddg/*/*.pdb' $OUTPATH'/refine/' "" 8 6 $SCRIPTS'/'fpd_refine.sh $server 5 8
 fi
 

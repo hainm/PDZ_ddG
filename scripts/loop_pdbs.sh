@@ -32,7 +32,7 @@ echo "Filenames are ${input_pdb[@]:$begin_index:$n_files_in_group}"
 #sets counters
 counter=0
 
-n_cores=30
+n_cores=40
 
 #n_cores_per_script must be a factor of n_cores TODO: output warning if not
 if [ -z ${n_cores_per_script+x} ];
