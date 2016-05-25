@@ -11,15 +11,14 @@ def main(path_prefix):
     sorted_energies = sorted(scorefileparse.get_energies(scores_dict))
     bottom_10_pct = sorted_energies[0:len(sorted_energies)/10]
     
-    scores_bottom_10 = { key : (e, r) for key, (e, r) in scores_dict.items() if e in bottom_10_pct }
+    scores_bottom_10 = dict(( key, (e, r)) for key, (e, r) in scores_dict.items() if e in bottom_10_pct )
     sorted_rmsd = sorted(scorefileparse.get_rmsd(scores_bottom_10))
     
-    rmsd_dist = sorted_rmsd[0::len(sorted_rmsd)/1]
-    
+    rmsd_dist = sorted_rmsd[0::len(sorted_rmsd)/20]
     sel_pdbs = [ key for key, (e, r) in scores_bottom_10.items() if r in rmsd_dist ]
 
     for pdb in sel_pdbs:
-	parent_dir = pdb[0]
+	parent_dir = '_'.join(pdb.split("_")[0:3])
 	src = "{0}/{1}/{2}.pdb".format(path_prefix,parent_dir,pdb)
         dst = "{0}/{1}.pdb".format(path_prefix,pdb)
         copyfile(src, dst)        
