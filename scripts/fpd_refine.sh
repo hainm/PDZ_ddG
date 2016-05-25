@@ -8,9 +8,12 @@ cst_file=$5
 server=$6
 
 dir_prefix=$(basename $(dirname $pdb))
-dir_prefix=${dir_prefix:8:4}
+dir_prefix=${dir_prefix:8:6}
 
 dir_suffix=$(echo $actual_fn | awk -F_ '{print $3}')
+
+o_dir_prefix=${dir_prefix:0:4}
+log_name=$o_dir_prefix'_'$dir_suffix'_refine.log'
 
 old_actual_fn=$actual_fn
 actual_fn=$dir_prefix'_'$dir_suffix
@@ -29,10 +32,10 @@ do
         mkdir -p $prefix
 
         cd $prefix
-	grep -sq "reported success" $actual_fn'_refine.log'
+	grep -sq "reported success" $log_name
 	if [ $? -gt 0 ];
 	then
-		nohup nice $ROSETTA_BIN'/'FlexPepDocking.static.linuxgccrelease -database $ROSETTA_DB -s $pdb -score:weights talaris2014_cst -out:prefix $prefix'_' $cst_file -pep_refine -nstruct 25 -ex1 -ex2 -use_input_sc > $actual_fn'_refine.log' &
+		nohup nice $ROSETTA_BIN'/'FlexPepDocking.static.linuxgccrelease -database $ROSETTA_DB -s $pdb -score:weights talaris2014_cst -out:prefix $prefix'_' $cst_file -pep_refine -nstruct 25 -ex1 -ex2 -use_input_sc > $log_name &
 	fi
 	cd ../
 done
