@@ -4,19 +4,22 @@ import os
 import argparse
 from customIO import scorefileparse
 from shutil import copyfile
+from math import ceil
 
 def main(path_prefix):
     scores_dict = scorefileparse.read_vals(path_prefix+"/final_score.sc", "rosetta", rmsd="rmsALL", trim=False)
 
     sorted_energies = sorted(scorefileparse.get_energies(scores_dict))
-    bottom_10_pct = sorted_energies[0:len(sorted_energies)/10]
+    bottom_20_pct = sorted_energies[0:len(sorted_energies)/5]
     
-    scores_bottom_10 = dict(( key, (e, r)) for key, (e, r) in scores_dict.items() if e in bottom_10_pct )
-    sorted_rmsd = sorted(scorefileparse.get_rmsd(scores_bottom_10))
+    scores_bottom_20 = dict(( key, (e, r)) for key, (e, r) in scores_dict.items() if e in bottom_20_pct )
+    #sorted_rmsd = sorted(scorefileparse.get_rmsd(scores_bottom_20)) 
     
-    rmsd_dist = sorted_rmsd[0::len(sorted_rmsd)/20]
-    sel_pdbs = [ key for key, (e, r) in scores_bottom_10.items() if r in rmsd_dist ]
+    sorted_keys_by_r = sorted(scores_bottom_20.keys(), key=lambda x: scores_bottom_20[x][1])
 
+    length = float(len(sorted_keys_by_r))
+    sel_pdbs = [ sorted_keys_by_r[int(ceil(i * length / 50))] for i in range(50) ]
+    
     for pdb in sel_pdbs:
 	parent_dir = '_'.join(pdb.split("_")[0:3])
 	src = "{0}/{1}/{2}.pdb".format(path_prefix,parent_dir,pdb)

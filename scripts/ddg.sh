@@ -39,18 +39,14 @@ done
 
 uniq_seq=( $(awk '{print $3}' ddg_data.txt | sort | uniq) )
 
-echo ${uniq_seq[@]}
-
 for s in "${uniq_seq[@]}"
 do
-	echo $s
 	#filedata=$(awk -v s=$s ' "s" == $3 {print $1,$2,$4}' ddg_data.txt)
 	file_data=( $(awk -v s=$s '$3 == s {print $1,$2,$4}' ddg_data.txt | sort -nk 3 | head -n 3 | awk -v s=$s '{ if (s == "wt"){print $1"/repacked_wt_round_"$2".pdb"} else {print $1"/mut_"s"_round_"$2".pdb"}}') )
 
 	for i in "${file_data[@]}" 
 	do
 		destination="${i/\//_}"
-		echo $destination	
 		cp $i $destination
 	done	
 done
