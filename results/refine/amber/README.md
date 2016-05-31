@@ -8,9 +8,8 @@ python generate_rst7_parm7_files.py pdblist.txt
 
 ```bash
 python submit_codes.sh # edit it to your need
-
 cd tmp_submit
-# sbatch submit_{number}.sh
+for job in submit_*; do sbatch $job; done
 ```
 
 - run mmgbsa (igb=8)

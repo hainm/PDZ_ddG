@@ -6,8 +6,7 @@
 #    - a single pdb code (1iib)
 #    - a list of pdb codes (1iib,1poh) (note: space does matter)
 
-# code=pdblist.txt
-code=1g9o06_E92A
+code=pdblist.txt
 
 # min_type should be 4
 # no retraint, new (faster) minimization protocol
@@ -31,6 +30,6 @@ $submit_script \
     --grouping \
     --n-chunks 10 \
     --n-nodes=1 \
-    --over-write \
     --job-name="pdz" \
     --prmtop-ext="prmtop"
+    # --over-write
