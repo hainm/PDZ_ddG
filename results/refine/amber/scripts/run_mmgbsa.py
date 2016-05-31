@@ -9,8 +9,7 @@ import pandas as pd
 
 MMGBSA_INPUT = """Input file for running PB and GB
 &general
-   # endframe=50, verbose=2,
-   endframe=2, verbose=2,
+   endframe=50, verbose=2,
    keep_files=1,
    use_sander=1,
 /
@@ -70,11 +69,21 @@ def write_ddg_csv():
     with open('ddG.csv', 'w') as fh:
         fh.write(out)
 
+def clean(mmgbsa_file=False):
+    os.remove("temp.csv")
+    os.remove("temp2.csv")
+    os.
+    if mmgbsa_file:
+        check_call("$AMBERHOME/bin/MMPBSA.py --clean", shell=True)
+        os.remove("peptide.parm7")
+        os.remove("receptor.parm7")
+        os.remove("reference.frc")
+
 def main():
     write_mmgbsa_input()
     run_mmgbsa()
     write_ddg_csv()
+    clean(mmgbsa_file=True)
 
 if __name__ == '__main__':
-    # main()
-    write_ddg_csv()
+    main()
