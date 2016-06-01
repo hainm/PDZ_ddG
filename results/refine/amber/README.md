@@ -18,3 +18,8 @@ for job in submit_*; do sbatch $job; done
 sbatch submit_mmgbsa.sh
 # or: python scripts/run_all_mmgbsa.py
 ```
+
+- Folder
+
+    ./pdbs: converted pdb files from minized rst7 files, which were used for mmgbsa
+    ./ddG: ddG and CA-rmsd to native
