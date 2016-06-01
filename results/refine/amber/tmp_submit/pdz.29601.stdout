@@ -1,0 +1,12 @@
+number of runs = 50 in refine/amber/2i0406_H63FA87R/no_restraint_new_protocol
+max structures per node = 3
+number of runs = 50 in refine/amber/2i0406_H63FA87RT89M/no_restraint_new_protocol
+max structures per node = 3
+number of runs = 50 in refine/amber/2i0406_wt/no_restraint_new_protocol
+max structures per node = 3
+number of runs = 50 in refine/amber/3qdo06_E102A/no_restraint_new_protocol
+max structures per node = 3
+number of runs = 50 in refine/amber/3qdo06_E102GS103ME104NS105KK106P/no_restraint_new_protocol
+max structures per node = 3
+number of runs = 50 in refine/amber/3qdo06_E102HS103TE104SS105TK106LV107L/no_restraint_new_protocol
+max structures per node = 3
