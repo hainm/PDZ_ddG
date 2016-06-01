@@ -21,5 +21,5 @@ sbatch submit_mmgbsa.sh
 
 - Folder
 
-    ./pdbs: converted pdb files from minized rst7 files, which were used for mmgbsa
+    ./pdbs: converted pdb files from minimized rst7 files, which were used for mmgbsa
     ./ddG: ddG and CA-rmsd to native
