@@ -1,0 +1,10 @@
+Input file for running PB and GB
+&general
+   # endframe=50, verbose=2,
+   endframe=2, verbose=2,
+   keep_files=1,
+   use_sander=1,
+/
+&gb
+  igb=8,
+/

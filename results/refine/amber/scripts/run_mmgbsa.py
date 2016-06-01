@@ -8,10 +8,9 @@ from subprocess import check_call
 import parmed as pmd
 import pandas as pd
 
-MMGBSA_INPUT = """Input file for running PB and GB
+MMGBSA_INPUT = """Input file for running MMGBSA with GBneck2 model
 &general
-   # endframe=50, verbose=2,
-   endframe=2, verbose=2,
+   endframe=50, verbose=2,
    keep_files=1,
    use_sander=1,
 /
@@ -60,12 +59,12 @@ def run_mmgbsa(prmtop='../prmtop', rst7_dir='../no_restraint_new_protocol/'):
     check_call("$AMBERHOME/bin/ante-MMPBSA.py -p ../prmtop -s '{}' -c receptor.parm7".format(strip_ligand_mask), shell=True)
     check_call("$AMBERHOME/bin/ante-MMPBSA.py -p ../prmtop -s '{}' -c peptide.parm7".format(strip_receptor_mask), shell=True)
     
-    cm = "$AMBERHOME/bin/MMPBSA.py -i mmgbsa.in -cp {prmtop} -y {rst7_dir}/*rst7 -rp ./receptor.parm7 -lp peptide.parm7 -eo temp.csv".format(
+    cm = "$AMBERHOME/bin/MMPBSA.py -i mmgbsa.in -cp {prmtop} -y {rst7_dir}/*rst7 -rp ./receptor.parm7 -lp peptide.parm7 -eo eout.csv".format(
             prmtop=prmtop,
             rst7_dir=rst7_dir)
     check_call(cm, shell=True)
     
-    check_call("grep 'gas,DELTA G solv,DELTA TOTAL' temp.csv -A100 > temp2.csv", shell=True)
+    check_call("grep 'gas,DELTA G solv,DELTA TOTAL' eout.csv -A50 > temp2.csv", shell=True)
 
 def get_filelist():
     filelist = None
@@ -84,21 +83,19 @@ def write_ddg_csv():
         fh.write(out)
 
 def clean(mmgbsa_file=False):
-    os.remove("temp.csv")
-    os.remove("temp2.csv")
+    try:
+        os.mkdir('logs')
+    except OSError:
+        pass
+    src = './logs'
 
-    if mmgbsa_file:
-        try:
-            os.mkdir('logs')
-        except OSError:
-            pass
-        src = './logs'
+    for fn in iglob('_*MM*'):
+        check_call('mv {} {}/'.format(fn, src), shell=True)
 
-        for fn in iglob('_*MM*'):
-            check_call('mv {} {}/'.format(fn, src), shell=True)
-
-        check_call("mv peptide.parm7 {}/".format(src), shell=True)
-        check_call("mv receptor.parm7 {}/".format(src), shell=True)
+    check_call("mv peptide.parm7 {}/".format(src), shell=True)
+    check_call("mv receptor.parm7 {}/".format(src), shell=True)
+    check_call("mv temp2.csv {}/".format(src), shell=True)
+    check_call("mv eout.csv {}/".format(src), shell=True)
 
 def main():
     check_amberhome()

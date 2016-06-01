@@ -8,4 +8,4 @@
 
 
 cd /gpfs/gpfs/project1/dacase-001/haichit/rosseta_amber/pdz/PDZ_ddG/results/refine/amber/
-python scripts/run_all_mmgbsa.py > logs.mmgbsa
+python scripts/run_all_mmgbsa.py

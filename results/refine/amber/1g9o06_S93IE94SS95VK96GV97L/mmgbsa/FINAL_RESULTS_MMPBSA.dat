@@ -1,0 +1,161 @@
+| Run on Tue May 31 23:50:33 2016
+|
+|Input file:
+|--------------------------------------------------------------
+|Input file for running PB and GB
+|&general
+|   # endframe=50, verbose=2,
+|   endframe=2, verbose=2,
+|   keep_files=1,
+|   use_sander=1,
+|/
+|&gb
+|  igb=8,
+|/
+|--------------------------------------------------------------
+|MMPBSA.py Version=14.0
+|Complex topology file:           ../prmtop
+|Receptor topology file:          ./receptor.parm7
+|Ligand topology file:            peptide.parm7
+|Initial mdcrd(s):                ../no_restraint_new_protocol//min_NoH_4_2_1_4_mut_S93IE94SS95VK96GV97L_round_2_0014.rst7
+|                                 ../no_restraint_new_protocol//min_NoH_4_2_2_4_mut_S93IE94SS95VK96GV97L_round_2_0002.rst7
+|                                 ../no_restraint_new_protocol//min_NoH_4_2_2_4_mut_S93IE94SS95VK96GV97L_round_2_0014.rst7
+|                                 ../no_restraint_new_protocol//min_NoH_4_2_2_4_mut_S93IE94SS95VK96GV97L_round_2_0025.rst7
+|                                 ../no_restraint_new_protocol//min_NoH_4_2_3_4_mut_S93IE94SS95VK96GV97L_round_2_0022.rst7
+|                                 ../no_restraint_new_protocol//min_NoH_4_2_4_4_mut_S93IE94SS95VK96GV97L_round_2_0008.rst7
+|                                 ../no_restraint_new_protocol//min_NoH_4_2_4_4_mut_S93IE94SS95VK96GV97L_round_2_0020.rst7
+|                                 ../no_restraint_new_protocol//min_NoH_4_2_5_4_mut_S93IE94SS95VK96GV97L_round_2_0011.rst7
+|                                 ../no_restraint_new_protocol//min_NoH_4_2_5_4_mut_S93IE94SS95VK96GV97L_round_2_0021.rst7
+|                                 ../no_restraint_new_protocol//min_NoH_4_2_7_4_mut_S93IE94SS95VK96GV97L_round_2_0016.rst7
+|                                 ../no_restraint_new_protocol//min_NoH_4_2_7_4_mut_S93IE94SS95VK96GV97L_round_2_0017.rst7
+|                                 ../no_restraint_new_protocol//min_NoH_4_2_7_4_mut_S93IE94SS95VK96GV97L_round_2_0022.rst7
+|                                 ../no_restraint_new_protocol//min_NoH_4_2_8_4_mut_S93IE94SS95VK96GV97L_round_2_0001.rst7
+|                                 ../no_restraint_new_protocol//min_NoH_4_2_8_4_mut_S93IE94SS95VK96GV97L_round_2_0002.rst7
+|                                 ../no_restraint_new_protocol//min_NoH_4_2_8_4_mut_S93IE94SS95VK96GV97L_round_2_0004.rst7
+|                                 ../no_restraint_new_protocol//min_NoH_6_1_1_6_mut_S93IE94SS95VK96GV97L_round_1_0010.rst7
+|                                 ../no_restraint_new_protocol//min_NoH_6_1_2_6_mut_S93IE94SS95VK96GV97L_round_1_0007.rst7
+|                                 ../no_restraint_new_protocol//min_NoH_6_1_2_6_mut_S93IE94SS95VK96GV97L_round_1_0015.rst7
+|                                 ../no_restraint_new_protocol//min_NoH_6_1_2_6_mut_S93IE94SS95VK96GV97L_round_1_0017.rst7
+|                                 ../no_restraint_new_protocol//min_NoH_6_1_3_6_mut_S93IE94SS95VK96GV97L_round_1_0006.rst7
+|                                 ../no_restraint_new_protocol//min_NoH_6_1_3_6_mut_S93IE94SS95VK96GV97L_round_1_0020.rst7
+|                                 ../no_restraint_new_protocol//min_NoH_6_1_4_6_mut_S93IE94SS95VK96GV97L_round_1_0005.rst7
+|                                 ../no_restraint_new_protocol//min_NoH_6_1_4_6_mut_S93IE94SS95VK96GV97L_round_1_0006.rst7
+|                                 ../no_restraint_new_protocol//min_NoH_6_1_4_6_mut_S93IE94SS95VK96GV97L_round_1_0017.rst7
+|                                 ../no_restraint_new_protocol//min_NoH_6_1_5_6_mut_S93IE94SS95VK96GV97L_round_1_0002.rst7
+|                                 ../no_restraint_new_protocol//min_NoH_6_1_6_6_mut_S93IE94SS95VK96GV97L_round_1_0010.rst7
+|                                 ../no_restraint_new_protocol//min_NoH_6_1_6_6_mut_S93IE94SS95VK96GV97L_round_1_0013.rst7
+|                                 ../no_restraint_new_protocol//min_NoH_6_1_6_6_mut_S93IE94SS95VK96GV97L_round_1_0015.rst7
+|                                 ../no_restraint_new_protocol//min_NoH_6_1_6_6_mut_S93IE94SS95VK96GV97L_round_1_0025.rst7
+|                                 ../no_restraint_new_protocol//min_NoH_6_1_7_6_mut_S93IE94SS95VK96GV97L_round_1_0011.rst7
+|                                 ../no_restraint_new_protocol//min_NoH_6_1_8_6_mut_S93IE94SS95VK96GV97L_round_1_0008.rst7
+|                                 ../no_restraint_new_protocol//min_NoH_6_1_8_6_mut_S93IE94SS95VK96GV97L_round_1_0014.rst7
+|                                 ../no_restraint_new_protocol//min_NoH_8_4_1_8_mut_S93IE94SS95VK96GV97L_round_4_0002.rst7
+|                                 ../no_restraint_new_protocol//min_NoH_8_4_1_8_mut_S93IE94SS95VK96GV97L_round_4_0020.rst7
+|                                 ../no_restraint_new_protocol//min_NoH_8_4_2_8_mut_S93IE94SS95VK96GV97L_round_4_0005.rst7
+|                                 ../no_restraint_new_protocol//min_NoH_8_4_3_8_mut_S93IE94SS95VK96GV97L_round_4_0011.rst7
+|                                 ../no_restraint_new_protocol//min_NoH_8_4_3_8_mut_S93IE94SS95VK96GV97L_round_4_0018.rst7
+|                                 ../no_restraint_new_protocol//min_NoH_8_4_3_8_mut_S93IE94SS95VK96GV97L_round_4_0023.rst7
+|                                 ../no_restraint_new_protocol//min_NoH_8_4_3_8_mut_S93IE94SS95VK96GV97L_round_4_0025.rst7
+|                                 ../no_restraint_new_protocol//min_NoH_8_4_4_8_mut_S93IE94SS95VK96GV97L_round_4_0010.rst7
+|                                 ../no_restraint_new_protocol//min_NoH_8_4_5_8_mut_S93IE94SS95VK96GV97L_round_4_0009.rst7
+|                                 ../no_restraint_new_protocol//min_NoH_8_4_5_8_mut_S93IE94SS95VK96GV97L_round_4_0021.rst7
+|                                 ../no_restraint_new_protocol//min_NoH_8_4_6_8_mut_S93IE94SS95VK96GV97L_round_4_0014.rst7
+|                                 ../no_restraint_new_protocol//min_NoH_8_4_6_8_mut_S93IE94SS95VK96GV97L_round_4_0018.rst7
+|                                 ../no_restraint_new_protocol//min_NoH_8_4_6_8_mut_S93IE94SS95VK96GV97L_round_4_0019.rst7
+|                                 ../no_restraint_new_protocol//min_NoH_8_4_7_8_mut_S93IE94SS95VK96GV97L_round_4_0006.rst7
+|                                 ../no_restraint_new_protocol//min_NoH_8_4_7_8_mut_S93IE94SS95VK96GV97L_round_4_0016.rst7
+|                                 ../no_restraint_new_protocol//min_NoH_8_4_8_8_mut_S93IE94SS95VK96GV97L_round_4_0003.rst7
+|                                 ../no_restraint_new_protocol//min_NoH_8_4_8_8_mut_S93IE94SS95VK96GV97L_round_4_0011.rst7
+|                                 ../no_restraint_new_protocol//min_NoH_8_4_8_8_mut_S93IE94SS95VK96GV97L_round_4_0014.rst7
+|
+|Receptor mask:                  ":1-91"
+|Ligand mask:                    ":92-97"
+|
+|Calculations performed using 2 complex frames.
+|
+|Generalized Born ESURF calculated using 'LCPO' surface areas
+|
+|All units are reported in kcal/mole.
+-------------------------------------------------------------------------------
+-------------------------------------------------------------------------------
+
+GENERALIZED BORN:
+
+Complex:
+Energy Component            Average              Std. Dev.   Std. Err. of Mean
+-------------------------------------------------------------------------------
+BOND                        56.7036                0.0025              0.0018
+ANGLE                      205.4495                0.5166              0.3653
+DIHED                      972.1138                0.2473              0.1748
+VDWAALS                   -729.3805                2.5257              1.7860
+EEL                      -6547.5734               12.2849              8.6867
+1-4 VDW                    271.3705                0.0633              0.0448
+1-4 EEL                   3264.4897                0.7438              0.5259
+EGB                      -1767.6759               15.4026             10.8913
+ESURF                       43.6865                0.3994              0.2824
+
+G gas                    -2506.8268               13.2372              9.3601
+G solv                   -1723.9894               15.0032             10.6088
+
+TOTAL                    -4230.8162                1.7660              1.2487
+
+
+Receptor:
+Energy Component            Average              Std. Dev.   Std. Err. of Mean
+-------------------------------------------------------------------------------
+BOND                        53.6268                0.0800              0.0566
+ANGLE                      197.6624                0.1466              0.1036
+DIHED                      927.2976                0.2376              0.1680
+VDWAALS                   -674.0206                0.1179              0.0833
+EEL                      -6012.3225                0.3261              0.2306
+1-4 VDW                    256.4528                0.1499              0.1060
+1-4 EEL                   2932.1062                0.3645              0.2577
+EGB                      -1647.0038                0.0371              0.0262
+ESURF                       42.7214                0.0406              0.0287
+
+G gas                    -2319.1973                0.1579              0.1117
+G solv                   -1604.2824                0.0777              0.0550
+
+TOTAL                    -3923.4796                0.0802              0.0567
+
+
+Ligand:
+Energy Component            Average              Std. Dev.   Std. Err. of Mean
+-------------------------------------------------------------------------------
+BOND                         3.0768                0.0776              0.0548
+ANGLE                        7.7870                0.3701              0.2617
+DIHED                       44.8162                0.0098              0.0069
+VDWAALS                    -12.2601                0.6669              0.4716
+EEL                       -457.0076               10.1685              7.1902
+1-4 VDW                     14.9177                0.2133              0.1508
+1-4 EEL                    332.3836                1.1081              0.7836
+EGB                       -205.3911                8.9647              6.3390
+ESURF                        6.3156                0.0991              0.0700
+
+G gas                      -66.2865                9.2116              6.5136
+G solv                    -199.0755                8.8656              6.2689
+
+TOTAL                     -265.3620                0.3460              0.2447
+
+
+Differences (Complex - Receptor - Ligand):
+Energy Component            Average              Std. Dev.   Std. Err. of Mean
+-------------------------------------------------------------------------------
+BOND                         0.0000                0.0000              0.0000
+ANGLE                        0.0000                0.0000              0.0000
+DIHED                       -0.0000                0.0001              0.0001
+VDWAALS                    -43.0998                1.7410              1.2311
+EEL                        -78.2433                2.4425              1.7271
+1-4 VDW                      0.0001                0.0000              0.0000
+1-4 EEL                      0.0000                0.0001              0.0001
+EGB                         84.7189                6.4750              4.5786
+ESURF                       -5.3505                0.2598              0.1837
+
+DELTA G gas               -121.3430                4.1836              2.9582
+DELTA G solv                79.3684                6.2153              4.3949
+
+DELTA TOTAL                -41.9746                2.0317              1.4367
+
+
+-------------------------------------------------------------------------------
+-------------------------------------------------------------------------------
