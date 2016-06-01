@@ -15,6 +15,5 @@ for job in submit_*; do sbatch $job; done
 - run mmgbsa (igb=8)
 
 ```bash
-cd mmgbsa
-# do real stuff here
+python run_all_mmgbsa.py
 ```
