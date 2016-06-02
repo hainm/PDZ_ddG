@@ -7,7 +7,7 @@ python generate_rst7_parm7_files.py pdblist.txt
 - run AMBER minimization
 
 ```bash
-python submit_codes.sh # edit it to your need
+sh submit_codes.sh # edit it to your need
 cd tmp_submit
 for job in submit_*; do sbatch $job; done
 ```
