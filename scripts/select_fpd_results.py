@@ -19,9 +19,13 @@ def main(path_prefix):
 
     length = float(len(sorted_keys_by_r))
     sel_pdbs = [ sorted_keys_by_r[int(ceil(i * length / 50))] for i in range(50) ]
+
+    #to see how long directory names are (dependent on NMR or xtal)
+    test_dir = next(os.walk(path_prefix + "/"))[1][0]
+    length_dir = len(test_dir.split("_"))
     
     for pdb in sel_pdbs:
-	parent_dir = '_'.join(pdb.split("_")[0:3])
+	parent_dir = '_'.join(pdb.split("_")[0:length_dir])
 	src = "{0}/{1}/{2}.pdb".format(path_prefix,parent_dir,pdb)
         dst = "{0}/{1}.pdb".format(path_prefix,pdb)
         copyfile(src, dst)        

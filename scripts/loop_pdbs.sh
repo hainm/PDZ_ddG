@@ -35,7 +35,7 @@ counter=0
 n_cores=40
 
 #n_cores_per_script must be a factor of n_cores TODO: output warning if not
-if [ ! -z ${n_cores_per_script+x} ];
+if [ ! -z ${n_cores_per_script} ];
 then
         n_cores=$(( $n_cores / $n_cores_per_script ))
 fi
@@ -53,6 +53,20 @@ do
 
 	pdb_name=${actual_fn:$pdb_start:$pdb_end}
         cst_pdb_name=${actual_fn:$pdb_start:4}
+
+	dir_name=$(basename $(dirname $pdb))
+	
+        #check if this is part of an NMR ensemble
+        if [[ ${actual_fn:$pdb_start} =~ [0-9a-z]{4}[0-9]{2}_00[0-9]{2} || $dir_name =~ [0-9a-z]{4}[0-9]{2}_00[0-9]{2} ]]
+	then
+		pdb_end_curr=$(( pdb_end + 5 ))
+		pdb_name=${actual_fn:$pdb_start:$pdb_end_curr}
+		model_n_start=$(( $pdb_start + 7 ))
+		cst_pdb_name=${actual_fn:$pdb_start:4}_${actual_fn:$model_n_start:4}
+		nmr=1
+	else
+		nmr=0
+	fi
 
         if [[ $cst_outpath == "" ]]
         then
@@ -75,7 +89,8 @@ do
 	fi
 
 	#pdb name is provided so that ddg can find mutfile
-	$script $pdb $actual_fn $pdb_name $pdb_outpath "$cst_file" $server &
+	#nmr is provided for fpd_refine
+	$script $pdb $actual_fn $pdb_name $pdb_outpath "$cst_file" $server $nmr &
 
         if (( $counter % $n_cores == 0 ));
              then
