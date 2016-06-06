@@ -44,7 +44,7 @@ else
 
 	#performing flexpepdock refine for 1g9o - only on server 
         #only one server because already partitioned the pdbs in the previous step
-	$SCRIPTS'/'loop_pdbs.sh $OUTPATH'/ddg/*/*.pdb' $OUTPATH'/refine/' "" 8 6 $SCRIPTS'/'fpd_refine.sh 1 1 8
+	$SCRIPTS'/'loop_pdbs.sh $OUTPATH'/ddg/*/*.pdb' $OUTPATH'/refine/' "" 8 6 $SCRIPTS'/'fpd_refine.sh 1 1 10
 
 	$SCRIPTS'/'loop_pdbs.sh $OUTPATH'/refine/*/' $OUTPATH'/refine/' "" 0 6 $SCRIPTS'/'fpd_postprocess.sh 1 1 1 
 fi
