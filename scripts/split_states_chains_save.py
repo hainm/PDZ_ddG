@@ -5,10 +5,9 @@ def split_states_chains_save( sel1 ):
     Simple script to split states of NMR ensemble and then save the complex and chain A separately for each state
     '''
 
-    cmd.split_states(sel1)
-
     for ind in range(1,cmd.count_states(sel1)+1):
         if cmd.count_states(sel1) > 1:
+            cmd.split_states(sel1)
             file_prefix="{0}_{1:04d}".format(sel1, ind)
         else:
             file_prefix=sel1   
