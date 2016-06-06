@@ -4,6 +4,7 @@ def split_states_chains_save( sel1 ):
     '''
     Simple script to split states of NMR ensemble and then save the complex and chain A separately for each state
     '''
+    cmd.remove("resn hoh")
 
     for ind in range(1,cmd.count_states(sel1)+1):
         if cmd.count_states(sel1) > 1:
