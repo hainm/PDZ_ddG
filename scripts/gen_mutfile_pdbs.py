@@ -18,11 +18,11 @@ def n_mut_pept(list_seqs):
     '''Given a list of sequences returns a list of the unique lengths of sequences'''
     return list(set([len(x) for x in list_seqs]))
 
-def make_mut_file(list_seqs, length, n_pdz_res, WT_pept, mut_file, orig, pdz_muts=None, offset=None):
+def make_mut_file(list_seqs, length, n_pdz_res, WT_pept, mut_file, orig, pdz_muts=None, offset=0):
     '''Given a filtered list of sequences, an offset, WT_pept, and mut_file to write to, generates a mutfile for that length sequences'''
     prefix=""
     if len(WT_pept) > length:
-	if not offset:
+	if offset == 0:
 	    raise ValueError('the length of chain B in the pdb file is longer than the sequence %s and no offset was provided' % (list_seqs[0]))   
 	else: 
 	    WT_pept = WT_pept[offset:offset+length]
@@ -34,7 +34,7 @@ def make_mut_file(list_seqs, length, n_pdz_res, WT_pept, mut_file, orig, pdz_mut
     list_muts=[ [] for _ in list_seqs ]
 
     for seq_ind,seq in enumerate(list_seqs):
-        for res_ind, (WT, mut) in enumerate(zip(WT_pept, seq), n_pdz_res+1):
+        for res_ind, (WT, mut) in enumerate(zip(WT_pept, seq), n_pdz_res+1+offset):
 	    if WT != mut:
 		list_muts[seq_ind].append("{0} {1} {2}\n".format(WT, res_ind, mut))
                 list_total_muts[seq_ind] = list_total_muts[seq_ind] + 1
