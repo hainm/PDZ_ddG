@@ -43,7 +43,6 @@ do
         if [[ $nmr -eq 1 ]];
 	then
 		prefix=$model_num'_'$prefix
-        	echo $prefix
 	fi
 
 	mkdir -p $prefix
